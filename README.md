@@ -1,4 +1,5 @@
-# Codes from 2000
+# Y2Kode
+![Read Me](/image/read-me.webp)
 
 Collection of codes, sites, and pet projects from year 2000 - 2004. Everything from `<center>`,`<frame>` to `<table>` layout!! How much we have come.
 
