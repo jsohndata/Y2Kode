@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 transitional//en"><HEAD><title>bg1</title>
+<SCRIPT LANGUAGE="JavaScript">
+var pos = 10;
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++) {
+this[i] = initArray.arguments[i];
+   }
+}
+var col=new initArray("4b","5b","8b","8b");
+function stop() {
+document.bgColor = '#00';
+clearTimeout(loopID);
+}
+function start() {
+col[1]="#ff0000"
+col[2]="#070708"
+col[3]="#404040"
+col[4]="#2c2c2d"
+col[5]="#3d4f53"
+col[6]="#070708"
+col[7]="#616161"
+col[8]="#0c0c0d"
+col[9]="#000000"
+col[10]="#ffffff"
+pos++;
+if (pos<0||pos>10) {
+pos = 0;
+}
+document.bgColor = col[pos];
+loopID = setTimeout("start()",10);
+}
+</SCRIPT></head><BODY onLoad="start()"></body></html>

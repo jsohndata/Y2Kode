@@ -1,0 +1,144 @@
+<!doctype html public "-//w3c//dtd html 4.0//en"><html>
+<head> <title>º¿¿µÐº¿¿µÐº¿¿µÐº¿¿µÐ</title>
+<style>
+#leftright, #topdown{
+position:absolute;
+left:0;
+top:0;
+width:1px;
+height:1px;
+layer-background-color:lime;
+background-color:lime;
+z-index:100;
+font-size:1px;
+}
+</style>
+<SCRIPT LANGUAGE = "JavaScript">
+function img_act(imgName) 
+  {window.status = " ";}
+function img_off(imgName) 
+  {window.status = " ";}
+  </SCRIPT>
+<SCRIPT LANGUAGE = "JavaScript1.1">
+{ link1on = new Image;
+link1on.src = "boomkx_ex6.gif";
+link2on = new Image;
+link2on.src = "boomkx_ex5.gif";
+link3on = new Image;
+link3on.src = "boomkx_ex6.gif";
+link4on = new Image;
+link4on.src = "boomkx_ex5.gif";
+
+link1off = new Image;
+link1off.src = "boomkx_pirate1.gif";
+link2off = new Image;
+link2off.src = "boomkx_pirate1.gif";
+link3off = new Image;
+link3off.src = "boomkx_pirate1.gif";
+link4off = new Image;
+link4off.src = "boomkx_pirate1.gif";  }
+
+function img_act(imgName)
+ {imgOn = eval(imgName + "on.src");
+        document [imgName].src = imgOn; }
+
+function img_off(imgName)
+        { imgOff = eval(imgName + "off.src");
+        document [imgName].src = imgOff; }
+</script></head>
+
+<body bgcolor="#000000" alink="#000000" vlink="#000000"  link="#000000"> 
+<div id="leftright" style="width:expression(document.body.clientWidth-2)"></div>
+<div id="topdown" style="height:expression(document.body.clientHeight-2)"></div>
+
+<script language="JavaScript1.2">
+
+if (document.all&&!window.print){
+leftright.style.width=document.body.clientWidth-2
+topdown.style.height=document.body.clientHeight-2
+}
+else if (document.layers){
+document.leftright.clip.width=window.innerWidth
+document.leftright.clip.height=1
+document.topdown.clip.width=1
+document.topdown.clip.height=window.innerHeight
+}
+
+function followmouse1(){
+//move cross engine for IE 4+
+leftright.style.pixelTop=document.body.scrollTop+event.clientY+1
+topdown.style.pixelTop=document.body.scrollTop
+if (event.clientX<document.body.clientWidth-2)
+topdown.style.pixelLeft=document.body.scrollLeft+event.clientX+1
+else
+topdown.style.pixelLeft=document.body.clientWidth-2
+}
+
+function followmouse2(e){
+//move cross engine for NS 4+
+document.leftright.top=e.y+1
+document.topdown.top=pageYOffset
+document.topdown.left=e.x+1
+}
+
+if (document.all)
+document.onmousemove=followmouse1
+else if (document.layers){
+window.captureEvents(Event.MOUSEMOVE)
+window.onmousemove=followmouse2
+}
+
+function regenerate(){
+window.location.reload()
+}
+function regenerate2(){
+setTimeout("window.onresize=regenerate",400)
+}
+if ((document.all&&!window.print)||document.layers)
+//if the user is using IE 4 or NS 4, both NOT IE 5+
+window.onload=regenerate2
+
+
+</script><center>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+  <tr>
+    <td valign="middle" align="center">
+      <table cellpadding="0" cellspacing="0" border="0" width="200">
+        <tr>
+          <td colspan="2" align="left"><a href="#"
+              onMouseover = "img_act('link1'); 
+              return true" onMouseout = "img_off('link1');"><img name="link1" 
+              width="60" height="54" border="0" alt="" SRC="boomkx_jake.gif"></a></td>
+        </tr>
+        
+        <tr>
+          <td><img src="../spacer.gif" width="60" height="54" border="0" alt=""></td>
+
+
+          <td align="right"><a href="#"
+              onMouseover = "img_act('link2');" 
+              onMouseout = "img_off('link2');"><img name="link2"
+              width="60" height="54" border="0" alt="" SRC="boomkx_jake.gif"></a></td>
+        </tr>
+        
+        <tr>
+          <td align="left"><a href="#"
+              onMouseover = "img_act('link3');
+              return true" onMouseout = "img_off('link3');"><img name="link3" 
+              width="60" height="54" border="0" alt="" SRC="boomkx_jake.gif"></a></td>
+              
+          <td><img src="../spacer.gif" width="60" height="54" border="0" alt=""></td>    
+        </tr>
+        
+        <tr>
+            
+          <td colspan="2" align="right"><a href="#"
+              onMouseover = "img_act('link4'); 
+              return true" onMouseout = "img_off('link4');"><img name="link4" 
+              width="60" height="54" border="0" alt="" SRC="boomkx_jake.gif" ></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body></html>

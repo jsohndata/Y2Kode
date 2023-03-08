@@ -1,0 +1,1008 @@
+<html>
+<head>
+<title>a</title>
+<link rel="stylesheet" href="../script/style.css">
+</head>
+
+<body bgcolor="#ffffff" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<form>
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><!-- main layout -->
+<tr>
+ <td><table cellpadding="0" cellspacing="0" border="0" width="750"><!-- ********** detail ********** -->
+      <tr>
+	    <td colspan="2"><table cellpadding="0" cellspacing="0" border="0">
+		                  <tr>
+		                    <td colspan="2"><h2>Edit Recipe Page</h2></td>
+		                  </tr>
+		                  <tr>
+		                    <td align="left"><input type="submit" value="Save"></td>
+		                    <td align="left"><input type="submit" value="Cancel"></td>
+							<tmpl_if delete>
+							<td align="left"><input type="submit" value="Delete"></td>
+							</tmpl_if>
+		                  </tr>
+		  
+		                  <tr>
+		                    <td><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td>
+		                  </tr>
+	    </table></td>
+      </tr>
+	  
+	  <tr>
+	    <Td colspan="2" bgcolor="#000000"><img src="../img/spacer.gif" width="10" height="5" alt="" border="0"></td>
+      </tr>
+	  <tr>
+	    <Td colspan="2" bgcolor="#ffffff"><img src="../img/spacer.gif" width="10" height="5" alt="" border="0"></td>
+      </tr>
+
+      <tr>
+        <td align="left" valign="top"><table cellpadding="0" cellspacing="0" border="0" width="352"><!-- left part of page -->
+          <tr><!-- name, cone, surface,color,firing, oxides, food safe -->
+            <td><table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+			    <td valign="top"><span class="result_titles">Name:</span></td>
+				<td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+				<td valign="middle"><input type="text" size="30" name="glaze_name"></td>
+			  </tr>
+			  
+			  <tr>
+                <td colspan="3"><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+              </tr>
+			  
+              <tr><!-- cone -->
+                <td valign="top"><span class="result_titles">Cone</span></td>
+                <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                <td><select name="cone" size="1"><!-- ######== -->
+                    <option value="022">022</option>
+                    <option value="021">021</option>
+					<option value="020">020</option>
+					<option value="019">019</option>
+					<option value="018">018</option>
+					<option value="017">017</option>
+					<option value="016">016</option>
+					<option value="015">015</option>
+					<option value="014">014</option>
+					<option value="013">013</option>
+					<option value="012">012</option>
+					<option value="011">011</option>
+					<option value="010">010</option>
+					<option value="09">09</option>
+					<option value="08">08</option>
+					<option value="07">07</option>
+					<option value="06">06</option>
+					<option value="05">05</option>
+					<option value="04">04</option>
+					<option value="03">03</option>
+					<option value="02">02</option>
+					<option value="01">01</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					</select></td><!-- ######== -->
+              </tr><!-- /cone -->
+              
+              <tr>
+                <td colspan="3"><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+              </tr>
+              
+              <tr><!-- surface -->
+                <td valign="top"><span class="result_titles">Surface</span></td>
+                <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                <td><Table cellpadding="0" cellspacing="2" border="0"><!-- ######== -->
+                    <tr>
+			          <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+			          <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+		            </tr>
+		            
+		            <Tr>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="shiny"></td>
+			          <td valign="middle"><span class="general_text">Shiny</span></td>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="matte"></td>
+			          <td valign="middle"><span class="general_text">Matte</span></td>
+			        </tr>
+			  
+		            <tr>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="gloss"></td>
+			          <td valign="middle"><span class="general_text">Gloss</span></td>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="smooth matte"></td>
+			          <td valign="middle"><span class="general_text">Smooth Matte</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="semi gloss"></td>
+			          <td valign="middle"><span class="general_text">Semi Gloss</span></td>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="stony matte"></td>
+			          <td valign="middle"><span class="general_text">Stony Matte</span></td 
+
+		            </tr>
+			  
+		            <tr>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="waxy"></td>
+			          <td valign="middle"><span class="general_text">Waxy</span></td>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="dry matte"></td>
+			          <td valign="middle"><span class="general_text">Dry Matte</span></td>
+		            </tr>
+	
+		            <tr>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="crater"></td>
+			          <td valign="middle"><span class="general_text">Crater</span></td>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="satin matte"></td>
+			          <td valign="middle"><span class="general_text">Satin Matte</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="crawl"></td>
+			          <td valign="middle"><span class="general_text">Crawl</span></td>
+			          <Td valign="middle"><input type="checkbox" name="surface" name="crazed"></td>
+			          <td valign="middle"><span class="general_text">Crazed</span></td>
+		            </tr>
+                </table></td><!-- ######== -->
+              </tr><!-- /surface -->
+              
+              <tr>
+                <td colspan="3"><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+              </tr>
+              
+              
+              <tr><!-- color -->
+                <td valign="top"><span class="result_titles">Color</span></td>
+                <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                <td><Table cellpadding="0" cellspacing="2" border="0"><!-- ######== -->
+                    <tr>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="63" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="63" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="63" height="1" alt="" border="0"></td>
+		            </tr>
+		            
+		            <Tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="pink"></td>
+			          <td valign="middle"><span class="general_text">Pink</span></td>
+			          <td valign="middle"><input type="checkbox" name="value" name="light"></td>
+			          <td valign="middle"><span class="general_text">Light</span></td>
+			          <td valign="middle"><input type="checkbox" name="color" name="gold"></td>
+			          <td valign="middle"><span class="general_text">Gold</span></td>
+			        </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="red"></td>
+			          <td valign="middle"><span class="general_text">Red</span></td>
+			          <td valign="middle"><input type="checkbox" name="value" name="medium"></td>
+			          <td valign="middle"><span class="general_text">Medium</span></td>
+			          <td valign="middle"><input type="checkbox" name="color" name="silver"></td>
+			          <td valign="middle"><span class="general_text">Silver</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="orange"></td>
+			          <td valign="middle"><span class="general_text">Orange</span></td>
+			          <td valign="middle"><input type="checkbox" name="value" name="dark"></td>
+			          <td valign="middle"><span class="general_text">Dark</span></td>
+			          <td valign="middle"><input type="checkbox" name="color" name="copper"></td>
+			          <td valign="middle"><span class="general_text">Copper</span></td>
+
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="yellow"></td>
+			          <td valign="middle"><span class="general_text">Yellow</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle"><input type="checkbox" name="color" name="luster"></td>
+			          <td valign="middle"><span class="general_text">Luster</span></td>
+		            </tr>
+	
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="green"></td>
+			          <td valign="middle"><span class="general_text">Green</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="turquoise"></td>
+			          <td valign="middle"><span class="general_text">Turquoise</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+		            
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="blue"></td>
+			          <td valign="middle"><span class="general_text">Blue</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+		            
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="purple"></td>
+			          <td valign="middle"><span class="general_text">Purple</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+		            
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="brown"></td>
+			          <td valign="middle"><span class="general_text">Brown</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+		            
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="white"></td>
+			          <td valign="middle"><span class="general_text">White</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+		            
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="gray"></td>
+			          <td valign="middle"><span class="general_text">Gray</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+		            
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="color" name="black"></td>
+			          <td valign="middle"><span class="general_text">Black</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+                </table></td><!-- ######== -->
+              </tr><!-- /color -->
+              
+              <tr>
+                <td colspan="3"><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+              </tr>
+              
+              <tr><!-- firing -->
+                <td valign="top"><span class="result_titles">Firing</span></td>
+                <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                <td><Table cellpadding="0" cellspacing="2" border="0"><!-- ######== -->
+                    <tr>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+		            </tr>
+		            
+		            <Tr>
+			          <td valign="middle"><input type="radio" name="firing" name="oxidation"></td>
+			          <td valign="middle"><span class="general_text">Oxidation</span></td>
+			          <td valign="middle"><input type="radio" name="firing" name="reduction"></td>
+			          <td valign="middle"><span class="general_text">Reduction</span></td>
+		            </tr>
+			  
+		            <Tr>
+			          <td valign="middle"><input type="radio" name="firing" name="oxidation and reduction"></td>
+			          <td valign="middle"><span class="general_text">Oxidation and Reduction</span></td>
+			          <td valign="middle"><input type="radio" name="firing" name="salt and soda"></td>
+			          <td valign="middle"><span class="general_text">Salt and Soda</span></td>
+		            </tr>
+			  
+		            <Tr>
+			          <td valign="middle"><input type="radio" name="firing" name="raku"></td>
+			          <td valign="middle"><span class="general_text">Raku</span></td>
+			          <td valign="middle"><input type="radio" name="firing" name="wood"></td>
+			          <td valign="middle"><span class="general_text">Wood</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="radio" name="firing" name="sagger"></td>
+			          <td valign="middle"><span class="general_text">Sagger</span></td>
+			          <td valign="middle"><input type="radio" name="firing" name="pit fire"></td>
+			          <td valign="middle"><span class="general_text">Pit Fire</span></td>
+		            </tr>
+                </table></td><!-- ######== -->
+              </tr><!-- /firing -->
+              
+              <tr>
+                <td colspan="3"><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+              </tr>
+              
+              <tr><!-- Oxides -->
+                <td valign="top"><span class="result_titles">Glaze Type by Oxides</span></td>
+                <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                <td valign="middle"><Table cellpadding="0" cellspacing="2" border="0"><!-- ######== -->
+                    <tr>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+		            </tr>
+		                    
+		            <Tr>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="soda"></td>
+			          <td valign="middle"><span class="general_text">Soda</span></td>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="potassium"></td>
+			          <td valign="middle"><span class="general_text">Potassium</span></td>
+		            </tr>
+			  
+		            <Tr>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="lithium"></td>
+			          <td valign="middle"><span class="general_text">Lithium</span></td>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="calcium"></td>
+			          <td valign="middle"><span class="general_text">Calcium</span></td>
+		            </tr>
+			  
+		            <Tr>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="strontium"></td>
+			          <td valign="middle"><span class="general_text">Strontium</span></td>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="barium"></td>
+			          <td valign="middle"><span class="general_text">Barium</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="magnesium"></td>
+			          <td valign="middle"><span class="general_text">Magnesium</span></td>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="zinc"></td>
+			          <td valign="middle"><span class="general_text">Zinc</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="lead"></td>
+			          <td valign="middle"><span class="general_text">Lead</span></td>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="boron"></td>
+			          <td valign="middle"><span class="general_text">Boron</span></td>
+		            </tr>
+			  
+		            <tr>
+			          <td valign="middle"><input type="checkbox" name="oxide" name="alumina"></td>
+			          <td valign="middle"><span class="general_text">Alumina</span></td>
+			          <td valign="middle">&nbsp;</td>
+			          <td valign="middle">&nbsp;</td>
+		            </tr>
+                </table></td><!-- ######== -->
+              </tr><!-- /Oxides -->
+              
+              <tr>
+                <td colspan="3"><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+              </tr>
+              
+              <tr><!-- Food Safe -->
+                <td valign="top"><span class="result_titles">Food Safe</span></td>
+                <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                <td><Table cellpadding="0" cellspacing="2" border="0">
+                    <tr>
+			          <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+			          <td valign="middle"><img src="../img/spacer.gif" width="100" height="1" alt="" border="0"></td>
+		            </tr>
+		                    
+		            <Tr>
+			          <td valign="middle"><input type="radio" name="hazard" name="yes"></td>
+			          <td valign="middle"><span class="general_text">Yes</span></td><!-- ###### -->
+		            </tr>
+		            
+		            <Tr>
+			          <td valign="middle"><input type="radio" name="hazard" name="no"></td>
+			          <td valign="middle"><span class="general_text">No</span></td><!-- ###### -->
+		            </tr>
+		            
+		            <Tr>
+			          <td valign="middle"><input type="radio" name="hazard" name="maybe"></td>
+			          <td valign="middle"><span class="general_text">Lab Test Recomended</span></td><!-- ###### -->
+		            </tr>
+                </table></td>
+              </tr><!-- /Food Safe -->
+            </table></td>
+          </tr><!-- /name, cone, surface, firing, color, oxides, food safe -->
+          
+          <tr>
+            <td><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+          </tr>
+          
+          <tr><!-- base ingridents and precentage 1_11 -->
+             <td align="left"><table cellpadding="0" cellspacing="2" border="0">
+                                     <tr>
+                                       <td><img src="../img/spacer.gif" width="190" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="top" align="left"><span class="result_titles">Base Ingredients:&nbsp;</span></td>
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="top" align="left" colspan="2"><span class="result_titles">Percentage:&nbsp;</span></td>
+                                     </tr>
+                                     
+                                     <tr>
+                                       <td colspan="4"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                                     </tr>
+                                    
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_0"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_0"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_1"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_1"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_2"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_2"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_3"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_3"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_4"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_4"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_5"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_5"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_6"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_6"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_7"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_7"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_8"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_8"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_9"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_9"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_10"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_10"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="recipe_ingr_name_11"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_ingr_val_11"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     
+                                     
+                                      <tr>
+                                        <td valign="middle" bgcolor="#ffffff"><img src="../img/spacer.gif" width="50" height="1" alt="" border="0"></td>
+                                        <td valign="middle" bgcolor="#ffffff"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                        <td valign="middle" bgcolor="#333333" colspan="2"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                      </tr>
+                                      <tr>
+                                        <td valign="middle" colspan="2"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                        <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="recipe_total_val"></span></td>
+                                        <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                      </tr>
+                                 </table></td>
+            </tr><!-- /base ingridents and precentage 1_11 -->
+            
+          <tr>
+            <td><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+          </tr>
+          
+          <tr><!-- Colorants and other ingredients -->
+              <td align="left"><table cellpadding="0" cellspacing="2" border="0"><!-- Colorants and other ingredients name and percentage -->
+                                     <tr>
+                                       <td><img src="../img/spacer.gif" width="190" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="top" align="left"><span class="result_titles">Colorants and other Ingredients:&nbsp;</span></td>
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="top" align="left" colspan="2"><span class="result_titles">Percentage:&nbsp;</span></td>
+                                     </tr>
+                                     
+                                     <tr>
+                                       <td colspan="4"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                                     </tr>
+                                    
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="colorants_ingr_name_0"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_ingr_val_0"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="colorants_ingr_name_1"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_ingr_val_1"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="colorants_ingr_name_2"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_ingr_val_2"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="colorants_ingr_name_3"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_ingr_val_3"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="colorants_ingr_name_4"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_ingr_val_4"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="left"><span class="general_text"><input type="text" size="30" maxlength="30" name="colorants_ingr_name_5"></span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_ingr_val_5"></span></td>
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                     </tr>
+                                     
+                                      <tr>
+                                        <td valign="middle" bgcolor="#ffffff"><img src="../img/spacer.gif" width="50" height="1" alt="" border="0"></td>
+                                        <td valign="middle" bgcolor="#ffffff"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                        <td valign="middle" bgcolor="#333333" colspan="2"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                      </tr>
+                                      <tr>
+                                        <td valign="middle" colspan="2"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                        <td valign="middle" align="right"><span class="general_text"><input type="text" size="7" maxlength="7" name="colorants_total_val"></span></td>
+                                        <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                      </tr>
+                                 </table></td><!-- /Colorants and other ingredients name and percentage -->
+            </tr><!-- /Colorants and other ingridents -->
+        </table></td><!-- left part of page -->
+        
+        <td  align="right" valign="top"><table cellpadding="0" cellspacing="0" border="0" width="325"><!-- right part of page -->
+          <tr><!-- tiles -->
+              <td valign="top" align="left" colspan="5"><span class="result_titles">Tiles</span></td>
+          </tr>
+          
+          <tr>
+            <td><table cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr>
+                <td><table cellpadding="0" cellspacing="0" border="0"><!-- image1 -->
+                    <tr>
+                      <td><input type="text" name="image1" size="28" maxlength="28"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    
+                    <tr>
+                      <td><input type="submit" name="image1" value="browse"></td>
+                    </tr>
+                </table></td><!-- /image1 -->
+                
+                <td bgcolor="#ffffff"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                
+                <td><table cellpadding="0" cellspacing="0" border="0"><!-- image2 -->
+                    <tr>
+                      <td><input type="text" name="image1" size="28" maxlength="28"></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    
+                    <tr>
+                      <td><input type="submit" name="image1" value="browse"></td>
+                    </tr>
+                </table></td><!-- /image2 -->
+              </tr>
+            </table></td>
+          </tr><!-- /tiles -->
+          
+          <tr>
+            <td><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+          </tr>
+          
+          <tr><!-- Molecular Unity Formula -->
+              <td align="left" valign="top"><table cellpadding="0" cellspacing="2" border="0">
+                               <tr>
+                                 <td valign="top" align="left" colspan="5"><span class="result_titles">Molecular Unity Formula</span></td>
+                               </tr>
+                               
+                               <tr>
+                                 <td valign="top"><table cellpadding="0" cellspacing="2" border="0"><!-- RO Fluxes 1_11 -->
+                                     <tr>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                     </tr>
+                                     <!-- title where RO Fluxes would have been -->
+                                     
+                                     <tr>
+                                       <td colspan="4"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                                     </tr>
+                                    
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_0"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">K20</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_0" value="K20"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_1"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Na20</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_1" value="Na20"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_2"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Ca0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_2" value="Ca0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_3"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Mg0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_3" value="Mg0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_4"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Li20</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_4" value="Li20"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_5"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Ba0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_5" value="Ba0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_6"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Pb0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_6" value="Pb0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_7"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Zn0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_7" value="Zn0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_8"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Co0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_8" value="Co0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_9"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Cu0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_9" value="Cu0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_10"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Ni0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_10" value="Ni0"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_11"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Sr0</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_11" value="Sr0"></td>
+                                     </tr>
+                                 </table></td><!-- /RO Fluxes 1_11 -->
+                                 
+                                 <td><img src="../img/spacer.gif" width="20" height="1" alt="" border="0"></td>
+                                 
+                                 <td align="left" valign="top"><table cellpadding="0" cellspacing="2" border="0"><!-- RO2 Group 12_18-->
+                                     <tr>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+                                     </tr>
+                                     <!-- title where RO2 Group would have been -->
+                                     
+                                     <tr>
+                                       <td colspan="4"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                                     </tr>
+                                    
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_12"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Al203</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_12" value="Al203"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_13"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">B203</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_13" value="B203"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_14"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Fe203</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_14" value="Fe203"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_15"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">P205</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_15" value="P205"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_16"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Sb203</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_16" value="Sb203"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_17"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Cr203</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_17" value="Cr203"></td>
+                                     </tr>
+                                     <tr>
+                                        <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_18"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">V205</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_18" value="V205"></td>
+                                     </tr>
+                                 </table></td><!-- /RO2 Group 12_18 -->
+                                 
+                                 <td><img src="../img/spacer.gif" width="20" height="1" alt="" border="0"></td>
+                                 
+                                 <td align="left" valign="top"><table cellpadding="0" cellspacing="2" border="0"><!-- R203 Group 19_25 -->
+                                     <tr>
+                                       <td><img src="../img/spacer.gif" width="57" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="77" height="1" alt="" border="0"></td>
+                                     </tr>
+                                     <!-- title where R203 Group would have been -->
+                                     
+                                     <tr>
+                                       <td colspan="4"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                                     </tr>
+                                    
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_19"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Si02</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_19" value="Si02"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_20"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Ti02</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_20" value="Ti02"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_21"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Zr02</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_21" value="Zr02"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_22"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Sn02</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_22" value="Sn02"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_23"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Mn02</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_23" value="Mn02"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_24"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">F</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_24" value="F"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="8" maxlength="8" name="molecular_ingr_value_25"></td><!-- ###### -->
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Si:Al Ratio</span><input type="hidden" size="7" maxlength="7" name="molecular_ingr_name_25" value="Si:Al Ratio"></td>
+                                     </tr>
+                                 </table></td><!-- /R203 Group 19_25 -->
+                               </tr>
+              </table></td>
+            </tr><!-- /Molecular Unity Formula -->
+            
+            <tr>
+              <td><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+            </tr>
+            
+            <tr><!-- Thermal Expansion -->
+              <td valign="top"><table cellpadding="0" cellspacing="2" border="0">
+                               <tr>
+                                 <td><span class="result_titles">Approx. Thermal Expansion</span></td>
+                               </tr>
+                               <tr>
+                                 <td><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                               </tr>
+                               <tr>
+                                 <td><span class="general_text"><input type="text" size="7" maxlength="7" name="thermal"><!-- ###### --><span class="general_text">&nbsp;X&nbsp;</span><sup>10-7</sup></span></td>
+                               </tr>
+              </table></td>
+            </tr><!-- /Thermal Expansion -->
+            
+            <tr>
+              <td><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+            </tr>
+            
+            <tr><!-- Percentage Ananlysis -->
+              <td valign="top"><table cellpadding="0" cellspacing="2" border="0">
+                                     <tr>
+                                       <td><img src="../img/spacer.gif" width="47" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="47" height="1" alt="" border="0"></td>
+                                       
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       
+                                       <td><img src="../img/spacer.gif" width="47" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                                       <td><img src="../img/spacer.gif" width="47" height="1" alt="" border="0"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="top" align="left" colspan="9"><span class="result_titles">Percentage Analysis&nbsp;</span></td>
+                                     </tr>
+                                     
+                                     <tr>
+                                       <td colspan="9"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                                     </tr>
+                                    
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_0"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Si02</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_0" value="Sio2"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_1"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Mg0</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_1" value="Mg0"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_2"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Al203</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_2" value="Al203"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_3"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Li20</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_3" value="Li20"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_4"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">B203</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_4" value="B203"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_5"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Pb0</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_5" value="Pb0"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_6"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Zn0</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_6" value="Zn0"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_7"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Sr0</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_7" value="Sr0"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_8"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">K20</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_8" value="K20"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_9"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">P205</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_9" value="P205"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_10"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Na20</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_10" value="Na20"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_11"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Fe203</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_11" value="Fe203"></td>
+                                     </tr>
+                                     <tr>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_12"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Ca0</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_12" value="Ca0"></td>
+                                       
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="right"><input type="text" size="7" maxlength="7" name="analysis_ingr_value_13"></td><!-- ###### -->
+                                       <td valign="middle" align="left"><span class="general_text">&nbsp;%</span></td>
+                                       <td valign="middle"><img src="../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+                                       <td valign="middle" align="left"><span class="general_text">Ba0</span><input type="hidden" size="7" maxlength="7" name="analysis_ingr_name_13" value="Ba0"></td>
+                                     </tr>
+                                     
+              </table></td>
+            </tr><!-- /Percentage Ananlysis -->
+             
+            <tr>
+              <td><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+            </tr>
+            
+            <tr>
+              <td><table cellpadding="0" cellspacing="2" border="0"><!-- health -->
+                      <tr>
+                        <td valign="middle"><span class="result_titles">Health Hazard Comments</span></td>
+                      </tr>
+                      <tr>
+                        <td valign="middle"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                      </tr>
+                      <tr>
+                        <td valign="middle"><textarea name="comments" rows="9" cols="35"></textarea></td><!-- ###### -->
+                      </tr>
+              </table></td><!-- /health -->
+            </tr>
+            
+            <tr>
+              <td><img src="../img/spacer.gif" width="10" height="10" alt="" border="0"></td><!-- ^_^ -->
+            </tr>
+                
+            <tr>
+              <td valign="middle"><table cellpadding="0" cellspacing="2" border="0"><!-- general -->
+                      <tr>
+                        <td valign="middle"><span class="result_titles">General Comments</span></td>
+                      </tr>
+                      <tr>
+                        <td valign="middle"><img src="../img/spacer.gif" width="1" height="10" alt="" border="0"></td><!-- ^_^ -->
+                      </tr>
+                      <tr>
+                        <td valign="middle"><textarea name="description" rows="9" cols="35"></textarea></td><!-- ###### -->
+                      </tr>
+              </table></td><!-- /general -->
+            </tr>
+            
+      </table></td><!-- /right part of page -->
+      </tr>
+ </table></td><!-- /********** detail ********** -->
+</tr>
+</table><!-- /main layout -->
+</form>
+</body></html>

@@ -1,0 +1,126 @@
+<!doctype html public "-//w3c//dtd html 4.0//en"><html>
+<head> <title>º¿¿µÐº¿¿µÐº¿¿µÐº¿¿µÐ</title>
+<style>
+#leftright, #topdown{
+position:absolute;
+left:0;
+top:0;
+width:1px;
+height:1px;
+layer-background-color:lime;
+background-color:lime;
+z-index:100;
+font-size:1px;
+}
+</style>
+<SCRIPT LANGUAGE = "JavaScript">
+function img_act(imgName) 
+  {window.status = " ";}
+function img_off(imgName) 
+  {window.status = " ";}
+  </SCRIPT>
+<SCRIPT LANGUAGE = "JavaScript1.1">
+{ link1on = new Image(60, 54);
+link1on.src = "boomkx_ex6.gif";
+link2on = new Image(60, 54);
+link2on.src = "boomkx_ex5.gif";
+link3on = new Image(60, 54);
+link3on.src = "boomkx_ex6.gif";
+link4on = new Image(60, 54);
+link4on.src = "boomkx_ex5.gif";
+
+link1off = new Image(60, 54);
+link1off.src = "boomkx_pirate1.gif";
+link2off = new Image(60, 54);
+link2off.src = "boomkx_pirate1.gif";
+link3off = new Image(60, 54);
+link3off.src = "boomkx_pirate1.gif";
+link4off = new Image(60, 54);
+link4off.src = "boomkx_pirate1.gif";  }
+
+function img_act(imgName)
+ {imgOn = eval(imgName + "on.src");
+        document [imgName].src = imgOn; }
+
+function img_off(imgName)
+        { imgOff = eval(imgName + "off.src");
+        document [imgName].src = imgOff; }
+</script></head>
+
+<body bgcolor="#000000" alink="#000000" vlink="#000000"  link="#000000"> 
+<div id="leftright" style="width:expression(document.body.clientWidth-2)"></div>
+<div id="topdown" style="height:expression(document.body.clientHeight-2)"></div>
+
+<script language="JavaScript1.2">
+
+if (document.all&&!window.print){
+leftright.style.width=document.body.clientWidth-2
+topdown.style.height=document.body.clientHeight-2
+}
+else if (document.layers){
+document.leftright.clip.width=window.innerWidth
+document.leftright.clip.height=1
+document.topdown.clip.width=1
+document.topdown.clip.height=window.innerHeight
+}
+
+function followmouse1(){
+//move cross engine for IE 4+
+leftright.style.pixelTop=document.body.scrollTop+event.clientY+1
+topdown.style.pixelTop=document.body.scrollTop
+if (event.clientX<document.body.clientWidth-2)
+topdown.style.pixelLeft=document.body.scrollLeft+event.clientX+1
+else
+topdown.style.pixelLeft=document.body.clientWidth-2
+}
+
+function followmouse2(e){
+//move cross engine for NS 4+
+document.leftright.top=e.y+1
+document.topdown.top=pageYOffset
+document.topdown.left=e.x+1
+}
+
+if (document.all)
+document.onmousemove=followmouse1
+else if (document.layers){
+window.captureEvents(Event.MOUSEMOVE)
+window.onmousemove=followmouse2
+}
+
+function regenerate(){
+window.location.reload()
+}
+function regenerate2(){
+setTimeout("window.onresize=regenerate",400)
+}
+if ((document.all&&!window.print)||document.layers)
+//if the user is using IE 4 or NS 4, both NOT IE 5+
+window.onload=regenerate2
+
+
+</script><center>
+<table><table cellspacing=20 cellpadding="0" border="0">
+<tr>
+
+<td width=70><a href= "boomguzz_s_head.html"  target="indet4"
+ onMouseover = "img_act('link1'); window.status='       step back <<<----------'; return true" onMouseout = "img_off('link1'); window.status=' '">
+<img border="0" name="link1" width=60 height=54 SRC="boomkx_jake.gif" ></a>
+
+<tr><td><td><td><td><td  width=70>
+<a href= "text_ani1.html"  target="indet4"
+ onMouseover = "img_act('link2'); 
+window.status='              play square <<<============'; return true" onMouseout = "img_off('link2'); window.status=' '"><img border="0" name="link2" width=60 height=54 SRC="boomkx_jake.gif" ></a>
+
+<tr><td  width=70>
+<a href= "JavaScript:window.location.reload()" target="indet4"
+ onMouseover = "img_act('link3'); window.status='         load em up slick!'; return true" onMouseout = "img_off('link3'); window.status=' '">
+<img border="0" name="link3" width=60 height=54 SRC="boomkx_jake.gif" ></a>
+
+<tr><td><td><td><td><td  width=70>
+<a href= "pdubeport.html"  target="indet4"
+ onMouseover = "img_act('link4'); 
+window.status='       dube port ---------->>>'; return true" onMouseout = "img_off('link4'); window.status=' '">
+<img border="0" name="link4" width=60 height=54 SRC="boomkx_jake.gif" ></a>
+
+</table></center></body></html>

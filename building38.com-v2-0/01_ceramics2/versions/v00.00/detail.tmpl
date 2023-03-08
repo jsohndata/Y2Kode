@@ -1,0 +1,25 @@
+<h1><tmpl_var glaze_name></h1>
+<b>Description</b><br>
+<tmpl_var description><br>
+<br>
+<b>Comment</b><br>
+<tmpl_var comment><br>
+<br>
+<b>Characteristics</b><br>
+<table>
+<tr><td>cone</td><td><tmpl_var cone></td></tr>
+<tr><td>color</td><td><tmpl_var color></td></tr>
+<tr><td>value</td><td><tmpl_var value></td></tr>
+<tr><td>metal</td><td><tmpl_var metal></td></tr>
+<tr><td>surface</td><td><tmpl_var surface></td></tr>
+<tr><td>firing</td><td><tmpl_var firing></td></tr>
+<tr><td>oxide</td><td><tmpl_var oxide></td></tr>
+<tr><td>hazard</td><td><tmpl_var hazard></td></tr>
+</table>
+<br>
+<b>Ingredients</b><br>
+<table>
+<tmpl_loop name=recipe>
+<tr><td><tmpl_var ingr_name></td><td><tmpl_var ingr_val></td></tr>
+</tmpl_loop>
+<table>

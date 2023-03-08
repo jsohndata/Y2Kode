@@ -1,0 +1,319 @@
+<html>        
+<head>    
+<title>::::::[ Building 38 ]:::::::</title>
+
+<SCRIPT LANGUAGE = "JavaScript1.1">
+{link1on = new Image;
+ link1on.src = "img/bar_button_ba_on.gif";
+ link2on = new Image;
+ link2on.src = "img/bar_button_graphic_on.gif";
+ link3on = new Image;
+ link3on.src = "img/bar_button_http_on.gif";
+ link4on = new Image;
+ link4on.src = "img/bar_button_info_on.gif";
+ 
+ link5on = new Image;
+ link5on.src = "img/building_window_ba_on.gif";
+ link6on = new Image;
+ link6on.src = "img/building_window_graphic_on.gif";
+ link7on = new Image;
+ link7on.src = "img/building_window_http_on.gif";
+ link8on = new Image;
+ link8on.src = "img/building_window_info_on.gif";
+ 
+ link9on = new Image;
+ link9on.src = "img/building_00_anttena_on.gif";
+ 
+ link10on = new Image;
+ link10on.src = "img/building_00_anttena_wowy.gif";
+ 
+ link11on = new Image;
+ link11on.src = "img/misc_bruce.gif";
+ 
+ link12on = new Image;
+ link12on.src = "img/misc_text.gif";
+   
+ 
+ 
+ 
+ 
+ link1off = new Image;
+ link1off.src = "img/bar_button_ba_off.gif";
+ link2off = new Image;
+ link2off.src = "img/bar_button_graphic_off.gif";
+ link3off = new Image;
+ link3off.src = "img/bar_button_http_off.gif";
+ link4off = new Image;
+ link4off.src = "img/bar_button_info_off.gif";
+ 
+ link5off = new Image;
+ link5off.src = "img/building_window_ba_off.gif";
+ link6off = new Image;
+ link6off.src = "img/building_window_graphic_off.gif";
+ link7off = new Image;
+ link7off.src = "img/building_window_http_off.gif";
+ link8off = new Image;
+ link8off.src = "img/building_window_info_off.gif";
+ 
+ link9off = new Image;
+ link9off.src = "img/building_00_anttena_off.gif";
+ 
+ link10off = new Image;
+ link10off.src = "img/building_00_anttena_off.gif";
+ 
+ link11off = new Image;
+ link11off.src = "img/spacer.gif";}
+			
+function img_act(imgName)
+ {imgOn = eval(imgName + "on.src");
+  document [imgName].src = imgOn;}
+
+function img_off(imgName)
+ {imgOff = eval(imgName + "off.src");
+  document [imgName].src = imgOff;}
+  
+  
+var pos = 100;
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++) {
+this[i] = initArray.arguments[i];
+   }
+}
+var col=new initArray("4b","5b","8b","8b");
+function stop() { 
+var loopID; 
+document.bgColor = '#333333'; 
+clearTimeout(loopID); 
+} 
+
+function start() {
+col[1]="#000000"
+col[2]="#ff3118"
+col[3]="#844d18"
+col[4]="#00a5c6"
+col[5]="#ffffff"
+col[6]="#000000"
+col[7]="#639c18"
+col[8]="#616161"
+
+pos++;
+if (pos<0||pos>10) {
+pos = 0;
+}
+document.bgColor = col[pos];
+loopID = setTimeout("start()",1);
+}
+</script>
+</head>
+
+<body bgcolor="#669900" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<!-- 3/21/01 -->
+
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="95%"><!-- layout -->
+<tr>
+  <td align="right" valign="bottom"><table cellpadding="0" cellspacing="0" border="0"><!-- actual -->
+    <tr>
+      <td align="left" valign="bottom"><img 
+        src="img/spacer.gif" width="214" height="191" alt="" border="0" name="link11"></td><!-- bruce -->
+        
+      <td rowspan="2"><table cellpadding="0" cellspacing="0" border="0"><!-- BUILDING -->
+        <tr>
+          <td rowspan="3"><img src="img/spacer.gif" width="33" height="1" alt="" border="0"></td>
+          <td rowspan="3"><img src="img/spacer.gif" width="18" height="1" alt="" border="0"></td>
+          <td ><img src="img/spacer.gif" width="14" height="1" alt="" border="0"></td>
+          <td ><img src="img/spacer.gif" width="29" height="1" alt="" border="0"></td>
+          <td ><img src="img/spacer.gif" width="27" height="1" alt="" border="0"></td>
+          <td ><img src="img/spacer.gif" width="66" height="1" alt="" border="0"></td>
+          <td rowspan="3"><img src="img/spacer.gif" width="54" height="1" alt="" border="0"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"><a href="#"
+            onMousedown="document.images['link9'].src=link10on.src">
+            <img src="img/building_00_anttena_off.gif" width="136" height="93" alt="" border="0" name="link9"></a></td><!-- anttena -->
+        </tr>
+
+        <tr>
+          <td colspan="4"><img src="img/building_01.gif" width="136" height="38" alt="" border="0"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"><img src="img/building_02.gif" width="094" height="39" alt="" border="0"></td>
+          <td colspan="0"><a href="javascript:stop()" 
+            onMouseover="document.bgColor='#cc3300'"><img 
+            src="img/building_window_info_off.gif" width="27" height="39" alt="" border="0" name="link8"></a></td><!-- info window -->
+          
+          <td colspan="2"><img src="img/building_03.gif" width="120" height="39" alt="" border="0"></td>
+        </tr>
+
+        <tr>
+          <td><a href="#" 
+            onMouseover="document.bgColor='#ccccff'"
+            onClick="document.images['link11'].src=link11on.src"><img 
+            src="img/building_window_http_off.gif" width="33" height="61" alt="" border="0" name="link7"></a></td><!-- http window -->
+          
+          <td colspan="3"><img src="img/building_04.gif" width="61" height="61" alt="" border="0"></td>
+          <td colspan="3" rowspan="4"><img src="img/building_05.gif" width="147" height="252" alt="" border="0"></td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><img src="img/building_06.gif"  width="65" height="55" alt="" border="0"></td>
+          <td><a href="javascript:start()" 
+            onMouseover="document.bgColor='#99cc66'"><img 
+            src="img/building_window_ba_off.gif" width="29" height="55" alt="" border="0" name="link5"></a></td><!-- ba window -->
+        </tr>
+
+        <tr>
+          <td><a href="#" 
+            onMouseover="document.bgColor='#cccc66'"
+            onClick="document.images['link11'].src=link11off.src"><img 
+            src="img/building_window_graphic_off.gif" width="33" height="42" alt="" border="0" name="link6"></a></td><!-- graphic window -->
+          
+          <td colspan="3"><img src="img/building_07.gif" width="61" height="42" alt="" border="0"></td>
+        </tr>
+
+        <tr>
+          <td colspan="4"><img src="img/building_08.gif" width="94" height="94" alt="" border="0"></td>
+        </tr>
+      </table></td><!-- /BUILDING -->
+    </tr>
+
+
+    
+
+    <tr>
+      <td valign="top"><table cellpadding="0" cellspacing="0" border="0"><!-- bar -->
+        <tr>
+          <td background="img/bar_00_bg1.gif"><a href="#" onMousedown = "img_act('link12');return true"><img 
+            src="img/bar_01_name.gif" width="236" height="59" alt="" border="0"></a></td><!-- title -->
+          
+          <td background="img/bar_00_bg1.gif"><img src="img/bar_00_bg1.gif" width="135" height="59" alt="" border="0"></td>
+          
+          <td rowspan="2"><img src="img/misc.block1.gif" width="50" height="146" alt="" border="0"></td>
+        </tr>
+    
+        <tr>
+          <td colspan="2"><table cellpadding="0" cellspacing="0" border="0"><!-- second row of bar -->
+            <tr>
+              <td><img src="img/bar_02_bottom_left.gif" width="82" height="87" alt="" border="0"></td>
+              
+              <td><table cellpadding="0" cellspacing="0" border="0" bgcolor="#666666"><!-- ba -->
+                <tr>
+                  <td align="center"><a href="ba/ba_0cer97_01.html" 
+                    onMouseover = "img_act('link1');img_act('link5');img_act('link9');return true"
+                    onMouseout = "img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/spacer.gif" width="46" height="61" alt="" border="0" name="link1"></a></td>
+                </tr>
+            
+                <tr>
+                  <td background="img/bar_00_bg2.gif"><img src="img/spacer.gif" width="10" height="6" alt="" border="0"></td>
+                </tr>
+            
+                <tr>
+                  <td bgcolor="#1B1B20"><a href="ba/ba_0cer97_01.html" 
+                    onMouseover = "img_act('link1');img_act('link5');img_act('link9');return true" 
+                    onMouseout = "img_off('link1');img_off('link5');img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/bar_text_ba.gif" width="62" height="20" alt="" border="0"></a></td>
+                </tr>
+              </table></td><!-- /ba -->
+              
+              <td background="img/bar_00_bg4.gif"><img src="img/spacer.gif" width="16" height="1" alt="" border="0"></td>
+              
+              <td><table cellpadding="0" cellspacing="0" border="0" bgcolor="#666666"><!-- graphic -->
+                <tr>
+                  <td align="center"><a href="graphics/gr_0ads_01.html"
+                    onMouseover = "img_act('link2');img_act('link6');img_act('link9');return true"
+                    onMouseout = "img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/spacer.gif" width="46" height="61" alt="" border="0" name="link2"></a></td>
+                </tr>
+            
+                <tr>
+                  <td background="img/bar_00_bg2.gif"><img src="img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                </tr>
+            
+                <tr>
+                  <td bgcolor="#1B1B20"><a href="graphics/gr_0ads_01.html" 
+                    onMouseover = "img_act('link2');img_act('link6');img_act('link9');return true" 
+                    onMouseout = "img_off('link2');img_off('link6');img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/bar_text_graphic.gif" width="57" height="20" alt="" border="0"></a></td>
+                </tr>
+              </table></td><!-- /graphic -->
+              
+              <td background="img/bar_00_bg4.gif"><img src="img/spacer.gif" width="16" height="1" alt="" border="0"></td>
+          
+              <td><table cellpadding="0" cellspacing="0" border="0" bgcolor="#666666"><!-- http -->
+                <tr>
+                  <td align="center"><a href="http/http_0verb9_01.html"
+                    onMouseover = "img_act('link3');img_act('link7');img_act('link9');return true"
+                    onMouseout = "img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/spacer.gif" width="46" height="61" alt="" border="0" name="link3"></a></td>
+                </tr>
+            
+                <tr>
+                  <td background="img/bar_00_bg2.gif"><img src="img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                </tr>
+            
+                <tr>
+                  <td bgcolor="#1B1B20"><a href="http/http_0verb9_01.html" 
+                    onMouseover = "img_act('link3');img_act('link7');img_act('link9');return true" 
+                    onMouseout = "img_off('link3');img_off('link7');img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/bar_text_http.gif" width="46" height="20" alt="" border="0"></a></td>
+                </tr>
+              </table></td><!-- /http -->
+         
+              <td background="img/bar_00_bg4.gif"><img src="img/spacer.gif" width="16" height="1" alt="" border="0"></td>
+          
+              <td><table cellpadding="0" cellspacing="0" border="0" bgcolor="#666666"><!-- info -->
+                <tr>
+                  <td align="center"><a href="info/info_0cont_01.html" 
+                    onMouseover = "img_act('link4');img_act('link8');img_act('link9');return true"
+                    onMouseout = "img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/spacer.gif" width="46" height="61" alt="" border="0" name="link4"></a></td>
+                </tr>
+            
+                <tr>
+                  <td background="img/bar_00_bg2.gif"><img src="img/spacer.gif" width="1" height="6" alt="" border="0"></td>
+                </tr>
+            
+                <tr>
+                  <td bgcolor="#1B1B20"><a href="info/info_0cont_01.html" 
+                    onMouseover = "img_act('link4');img_act('link8');img_act('link9');return true" 
+                    onMouseout = "img_off('link4');img_off('link8');img_off('link9');"
+                    onClick="document.images['link9'].src=link10on.src;document.images['link11'].src=link11on.src"><img 
+                    src="img/bar_text_info.gif" width="77" height="20" alt="" border="0"></a></td>
+                </tr>
+               </table></td><!-- /info -->
+          </td></table><!-- /second row of bar -->
+        </tr>
+        
+        <tr>
+          <td colspan="3"><img src="img/spacer.gif" width="30" height="1" alt="" border="0"><a href="#" 
+            onClick="document.images['link12'].src=link11off.src"
+            style="cursor:arrow"><img 
+            src="img/spacer.gif" width="340" height="94" alt="" border="0" name="link12"></a></td><!-- text -->
+        </tr>
+      </td></table><!-- /bar -->
+    </tr>
+  </table></td><!-- /actual -->
+  
+  
+
+</tr>
+</table><!-- /layout -->
+
+</body></html>
+  
+
+
+
+
+      

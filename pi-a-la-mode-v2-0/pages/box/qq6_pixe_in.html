@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>_--===[] ^_^ []===--_</title>
+<style>
+<!--
+.intro{
+position:absolute;
+left:0;
+top:0;
+layer-background-color:teal;
+background-color:teal;
+border:0.1px solid teal;
+}
+-->
+</style></head>
+
+<body bgcolor="#840000" ALINK="#840000" LINK="#840000" VLINK="#840000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+
+<div id="p1" class="intro"></div>
+<div id="p2" class="intro"></div>
+<div id="p3" class="intro"></div>
+<div id="p4" class="intro"></div>
+<div id="p5" class="intro"></div>
+<div id="p6" class="intro"></div>
+<div id="p7" class="intro"></div>
+<div id="p8" class="intro"></div>
+<div id="p9" class="intro"></div>
+<div id="p10" class="intro"></div>
+<div id="p11" class="intro"></div>
+<div id="p12" class="intro"></div>
+<div id="p13" class="intro"></div>
+<div id="p14" class="intro"></div>
+<div id="p15" class="intro"></div>
+<div id="p16" class="intro"></div>
+<div id="p17" class="intro"></div>
+<div id="p18" class="intro"></div>
+<div id="p19" class="intro"></div>
+<div id="p20" class="intro"></div>
+<div id="p21" class="intro"></div>
+<div id="p22" class="intro"></div>
+<div id="p23" class="intro"></div>
+<div id="p24" class="intro"></div>
+<div id="p25" class="intro"></div>
+
+<script>
+
+/*
+Boxing-away Script- 
+By Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more free DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+
+var espeed=300
+var counter=1
+var temp=new Array()
+var temp2=new Array()
+
+
+////////Code for Netscape NS 4+////
+if (document.layers){
+for (i=1;i<=25;i++){
+temp[i]=eval("document.p"+i+".clip")
+temp2[i]=eval("document.p"+i)
+temp[i].width=window.innerWidth/5
+temp[i].height=window.innerHeight/5
+}
+
+for (i=1;i<=5;i++)
+temp2[i].left=(i-1)*temp[i].width
+
+for (i=6;i<=10;i++){
+temp2[i].left=(i-6)*temp[i].width
+temp2[i].top=temp[i].height
+}
+
+for (i=11;i<=15;i++){
+temp2[i].left=(i-11)*temp[i].width
+temp2[i].top=2*temp[i].height
+}
+
+for (i=16;i<=20;i++){
+temp2[i].left=(i-16)*temp[i].width
+temp2[i].top=3*temp[i].height
+}
+
+for (i=21;i<=25;i++){
+temp2[i].left=(i-21)*temp[i].width
+temp2[i].top=4*temp[i].height
+}
+
+}
+
+function erasecontainerns(){
+window.scrollTo(0,0)
+var whichcontainer=Math.round(Math.random()*25)
+if (whichcontainer==0)
+whichcontainer=1
+if (temp2[whichcontainer].visibility!="hide")
+temp2[whichcontainer].visibility="hide"
+else{
+while (temp2[whichcontainer].visibility=="hide"){
+whichcontainer=Math.round(Math.random()*25)
+if (whichcontainer==0)
+whichcontainer=1
+}
+temp2[whichcontainer].visibility="hide"
+}
+
+if (counter==25)
+clearInterval(beginerase)
+
+counter++
+espeed-=10
+
+}
+
+
+////////End code for NS 4+////////
+
+
+
+
+if (document.layers)
+beginerase=setInterval("erasecontainerns()",espeed)
+else if (document.all){
+beginerase=setInterval("erasecontainerie()",espeed)
+keeptop=setInterval("window.scrollTo(0.0)",100)
+}
+
+
+</script>
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+<tr>
+  <td align="center" valign="middle"><table cellpadding="0" cellspacing="0" border="0" width="284">
+    <tr>
+      <td><img src="qq.gif" width="150" height="142" alt=""></td>
+      <td><img src="qq.gif" width="150" height="142" alt=""></td>
+    </tr>
+
+    <tr>
+      <td><img src="qq.gif" width="150" height="142" alt=""></td>
+      <td><img src="qq.gif" width="150" height="142" alt=""></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+</body></html>
+
+
+
+

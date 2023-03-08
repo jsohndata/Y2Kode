@@ -1,0 +1,217 @@
+<!doctype html public "-//w3c//dtd html 4.0//en"><html>
+<HEAD>
+<title>a</title>
+<style>a{text-decoration:none}</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+var display_text  = "               "
++ "                         "
++ "                           "
++ "                           "
++ "                     "
++ "                         "
+var display_text;
+var place;
+var meter; 
+var out = " ";
+var place = 5;
+function scroll_text() {
+for (meter = 0; meter < place; meter++) {
+out += " "}
+if (place >= 0)
+out += display_text
+else out = display_text.substring(-place,display_text.length)
+document.scroll_form.field.value = out
+out = " "
+place--
+if (place < -(display_text.length)) {
+place = 50
+}
+setTimeout('scroll_text()',20)
+}
+
+</SCRIPT>
+
+
+<BODY onload="scroll_text()" bgcolor="#cc3300">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+<tr>
+  <td align="center" valign="middle">
+<FORM NAME="scroll_form">
+<input type="text" name="field" size="80">
+
+
+</FORM>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Hapaboy (happynoodleboy@mindless.com) -->
+
+var message="";
+var spc=10;
+var speedisplay=50;
+var times=2;
+var rows=5;
+var cols=40;
+var stopbutton="yes"; // yes or no
+var stopbuttonvalue="                      STOP                          ";
+var startvalue="                      START                          ";
+var len=spc*2;
+var text=message;
+var i;
+var stop=false;
+var stoppedisplay;
+for (i=0;i<spc;i++) {
+text=text+" ";
+}
+function array(n) {
+this.length = n
+for (i=1; i <= n; i++) {
+this[i] ="";
+}
+return this;
+}
+document.writeln('<form name="F">')
+document.writeln('<textarea rows='+rows+' cols='+cols+' name="display" wrap=soft></textarea>')
+
+document.writeln('</form>')
+var l=text.length;
+var ll=message.length;
+var lb=new array(l)
+var lr=new array(spc*2+1)
+var lg=new array(ll)
+var lk=new array(ll)
+lb[0]=text;lb[l]=text;lr[0]=message;lg[0]=message;
+
+for (j=1;j<l;j++) {
+lb[j]=lb[j-1].substring(1, l)+lb[j-1].charAt(0);
+}
+lr[spc*2]=message;
+for (i=1;i<=spc;i++) {
+lr[i]=" "+lr[i-1]
+}
+for (i=spc*2-1;i>=spc+1;i--) {
+lr[i]=" "+lr[i+1]
+}
+var ll=message.length;
+for (j=1;j<ll;j++) {
+for (i=lg[j-1].length-2;i>=0;i--) {
+lg[j]=lg[j-1].charAt(i)+lg[j];
+   }
+}
+lk[ll]=message;
+for (j=ll-1;j>=0;j--) {
+lk[j]=lk[j+1].substring(1, l);
+}
+var lge="";
+var lbe="";
+var rle="";
+for (i=0;i<rows;i++) {
+lge=lge+lg[i]+unescape('%0D%0A');
+}
+for (i=0;i<rows;i++) {
+lbe=lbe+lb[l-i]+unescape('%0D%0A');
+}
+for (i=1;i<=rows;i++) {
+rle=rle+lr[spc*2-i]+unescape('%0D%0A');
+}
+var c=1;
+var i=ll;
+var j=0;
+var f=0;
+function lgf() {
+if(stop==false) {
+if(i>ll) {
+j=0;
+i=i-2;
+}
+if(i==0&&j==0) {
+c++;
+j=1;
+}
+if(j!=0) {
+document.F.display.value=lg[i]+unescape('%0D%0A')+document.F.display.value;
+i++;
+}
+if(j==0) {
+document.F.display.value=lg[i]+unescape('%0D%0A')+document.F.display.value;
+i--;
+}
+if(c<=times) {
+setTimeout("lgf()",speedisplay);
+}
+else {
+document.F.display.value=lge;
+i=0;
+j=0;
+c=0;
+t();
+      }
+   }
+}
+function t() {
+if(stop==false) {
+if(i>l) {i=1};
+document.F.display.value=lb[i]+unescape('%0D%0A')+document.F.display.value;
+i++;
+j++;
+if(j<=l*times) {
+setTimeout("t()",speedisplay)}else{document.F.display.value=lbe;
+i=0;
+j=0;
+rl();
+      }
+   }
+}
+function rl() {
+if (stop==false) {
+if(i>=spc*2) {i=0};
+document.F.display.value=lr[i]+unescape('%0D%0A')+document.F.display.value;
+i++;
+j++;
+if(j<len*times) {setTimeout("rl()",speedisplay)}else{document.F.display.value=rle;i=ll-1;j=0;trans()}
+}
+}
+function trans() {
+if(stop==false) {
+document.F.display.value=lk[i]+unescape('%0D%0A')+document.F.display.value;
+i--;
+if(i!=1) {
+setTimeout("trans()",speedisplay)
+}
+else {
+i=ll;
+lgf();
+      }
+   }
+}
+function stopstart() {
+stoppedisplay=stop;
+if(stoppedisplay==false) {
+stop=true;document.F.stopit.value=startvalue;
+}
+if(stoppedisplay==true) {
+stop=false;document.F.stopit.value=stopbuttonvalue;
+document.F.display.value="";
+i=11;
+j=0;
+c=0;
+lgf();
+   }
+}
+if (rows>spc||rows>ll) {
+alert("ERROR!\nrows can NOT be more that spaces or message length!!!!")
+}
+if (spc+ll>cols) {
+alert("ERROR!\ncols(coloums) can NOT be less that the message length + spacing length")
+}
+if (rows<=spc&&rows<=ll&&spc+ll<=cols) {
+lgf();
+}
+// End -->
+</script>
+
+</SCRIPT></td></tr></table>
+</body></html>
+
+
+
+

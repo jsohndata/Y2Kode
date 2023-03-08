@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>i_x00main_000000</title>
+
+<SCRIPT LANGUAGE = "JavaScript">
+function openFullscreen(page) {
+var yes = 1;
+var no = 0;
+
+var menubar = no;      // The File, Edit, View Menus
+var scrollbars = yes;   // Horizontal and vertical scrollbars
+var locationbar = no;  // The location box with the site URL
+var directories = no;  // the "What's New", "What Cool" links
+var resizable = no;    // Can the window be resized?
+var statusbar = yes;    // Status bar (with "Document: Done")
+var toolbar = no;      // Back, Forward, Home, Stop toolbar
+
+
+windowprops = "width=565" + (screen) + ",height=365" + (screen) + ",top="0",left="0"";
+
+windowprops += 
+(menubar ? ",menubars" : "") +
+(scrollbars ? ",scrollbars" : "") +
+(locationbar ? ",location" : "") +
+(directories ? ",directories" : "") +
+(resizable ? ",resizable" : "") +
+(statusbar ? ",status" : "") +
+(toolbar ? ",toolbar" : "");
+
+
+window.open(page, 'fullPopup', windowprops );
+
+}
+</SCRIPT>
+</head>
+
+<body bgcolor="#000000"  text="#00000"  background="i_lines.gif">
+
+<center>
+<table border="0" cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+  <td><h1>7.1:99----11.21:99  <:Q </h1></td>
+</tr>
+
+<tr>
+  <td align="right"><a 
+    href= "javascript:openFullscreen('index_ran_go.html')" 
+    onMouseover = "window.status=' '; return true"
+    onMouseout = "window.status=' '"><img 
+      src="i_pi2.gif" width="200" height="32" 
+      vspace="100%" align="right" border="0"></a></td>
+</tr>
+</table>
+</body></html>

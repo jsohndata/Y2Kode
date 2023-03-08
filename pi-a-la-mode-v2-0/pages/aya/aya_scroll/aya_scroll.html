@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 transitonal//en"><html><title>aaa</title>
+<head><SCRIPT LANGUAGE="JavaScript">
+function chapter1on()
+{if (document.layers['chapter1'].clip.bottom < 8000)
+{document.layers['chapter1'].clip.bottom += 20;
+ setTimeout("chapter1on();",50);}}
+
+function chapter1off()
+{if (document.layers['chapter1'].clip.bottom > 20) 
+{document.layers['chapter1'].clip.bottom -= 20;
+ setTimeout("chapter1off();",20);}}
+
+function chapter2on()
+{if (document.layers['chapter2'].clip.bottom < 290)//length, time down// 
+{document.layers['chapter2'].clip.bottom += 5;//speed down
+setTimeout("chapter2on();",50);}}
+
+function chapter2off()
+{if (document.layers['chapter2'].clip.bottom > 300) 
+ {document.layers['chapter2'].clip.bottom -= 5;//speed up//
+ setTimeout("chapter2off();",20);}}
+
+function chapter3on()
+{if (document.layers['chapter3'].clip.bottom < 2580)
+{document.layers['chapter3'].clip.bottom += 5;
+ setTimeout("chapter3on();",50);}}
+
+function chapter3off()
+{if (document.layers['chapter3'].clip.bottom > 20) 
+{document.layers['chapter3'].clip.bottom -= 20;
+ setTimeout("chapter3off();",20);}}
+
+function chapter4on()
+{if (document.layers['chapter4'].clip.bottom < 200) {
+document.layers['chapter4'].clip.bottom += 10;
+setTimeout("chapter4on();",50);}}
+
+function chapter4off()
+{if (document.layers['chapter4'].clip.bottom > 100) {
+ document.layers['chapter4'].clip.bottom -= 100;
+ setTimeout("chapter4off();",20);}}
+
+</SCRIPT></head>
+<body bgcolor="#000000" vlink="#ff0000" link="#ff0000" alink="#ff0000">
+<LAYER NAME="chapter1" LEFT=17 TOP=1 BGCOLOR="#ff0000" WIDTH=20  CLIP="-10,0,90,20" onMouseOver="chapter1on()" onMouseOut="chapter1off()"> 
+<a href="../ayaindex.html"
+onmouseover="window.status=' '; return true"
+onmouseout="window.status=' '">
+<img src="aay_lai2.gif" width="70" height="82" border="0" alt="">
+<img src="aay_lai2.gif" width="70" height="82" border="0" alt="">
+<img src="aay_lai2.gif" width="70" height="82" border="0" alt="">
+<img src="aay_lai2.gif" width="70" height="82" border="0" alt="">
+<img src="aay_lai2.gif" width="70" height="82" border="0" alt=""></a>
+</LAYER>
+
+<LAYER NAME="chapter2" LEFT=170 TOP=100 BGCOLOR="#f7e6c5" WIDTH=20 CLIP="-10,0,90,20" onMouseOver="chapter2on()" onMouseOut="chapter2off()">
+<li><li><li><li><li><img src="aay_lai6.gif" width="70" height="82" border="0" alt="">
+<li><li><li><font size=+13>............</font>
+</LAYER>
+
+<LAYER NAME="chapter3" LEFT=500 TOP=55 BGCOLOR="#404040" WIDTH=20 CLIP="-10,0,50,5" onMouseOver="chapter3on()" onMouseOut="chapter3off()">
+<img src="aay_laijap.gif" width="26" height="273" border="0" alt="">
+</LAYER>
+
+<LAYER NAME="chapter4" LEFT=300 TOP=80 BGCOLOR="#f7efd6" WIDTH=20 CLIP="-10,0,105,15" onMouseOver="chapter4on()" onMouseOut="chapter4off()">
+<img src="aay_lai5.gif" width="70" height="82" border="0" alt="">
+
+</LAYER></body></html>
+

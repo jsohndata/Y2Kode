@@ -1,0 +1,103 @@
+<html>
+<head>
+<style>
+.form-button
+{width:120px;
+ background-color:#666666;
+ 
+ font-face:"arial","helvetica";
+ font-size:10px;
+ color:#cccccc;}
+</style>
+<script language="JavaScript">
+var startArray = 0;
+var characters = new Array(
+"1", "2", "3", "4", "5", 
+"6","7","8","9");
+
+var arrayLength = characters.length - 1;
+new preLoad('snap_11.11.01_01folder/','',characters);
+
+function changeChars(direction) {
+        if (direction == "forward") {
+                if (startArray == (arrayLength)) { startArray = 0; }
+                else { startArray++; }
+        }
+        
+        if (direction == "back" ) {
+                if (startArray == 0) { startArray = arrayLength; }
+                else { startArray--; }
+        }
+
+        var i = 0;
+        while (i < 3) {
+                var changeOffset = startArray + i;
+                if (changeOffset > arrayLength) {
+                        changeOffset = changeOffset - characters.length;
+                }
+                imageSlot = "slot" + i;
+                document.images[imageSlot].src ="snap_11.11.01_01folder/"  + characters[changeOffset] + ".jpg";i++;
+        }
+}
+
+function preLoad(preLoad_path,preLoad_suffix,preLoad_images) {
+	var preLoadArray = new Array();
+	this.length = preLoad_images.length;
+	for (var i = 0; i < this.length; i++) {
+		var file = preLoad_path + preLoad_images[i] + preLoad_suffix + ".jpg";
+		preLoadArray[i] = new Image();
+		preLoadArray[i].src = file;
+	}
+}
+</script>
+</head>
+
+<body tapmargin="0" leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#ffffff" background="snap.bg1.jpg" onload="changeChars();">
+
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+  <td><table cellpadding="0" cellspacing="0" border="0" width="610" height="290" bgcolor="#666666"><!-- slot bgcolor -->
+    <tr>
+      <td align="center" valign="middle"><table cellpadding="0" cellspacing="0" border="0" bgcolor="#666666"><!-- to hold slots in center -->
+        <tr>
+          <td><img src="../../img/spacer.gif" width="200" height="244" alt="" border="0" name="slot0"></td>
+          <td><img src="../../img/spacer.gif" width="200" height="244" alt="" border="0" name="slot1"></td>
+          <td><img src="../../img/spacer.gif" width="200" height="244" alt="" border="0" name="slot2"></td>
+        </tr>
+      </table></td><!-- /to hold slots in center -->
+    </tr>
+        
+    <tr>
+      <td><img src="../../img/spacer.gif" width="140" height="2"" alt="" border="0"></td>
+    </tr>
+        
+    <tr>
+      <td valign="top"><form><table cellpadding="0" cellspacing="0" border="0"><!-- nav -->
+        <tr>
+          <td><img src="../../img/spacer.gif" width="12" height="5"" alt="" border="0"></td>
+                         
+          <td align="left"><input type="button" value="<< Previous Frame" 
+            onMousedown="javascript:changeChars('back');return true" class="form-button"></td>
+              
+          <td><img src="../../img/spacer.gif" width="10" height="5"" alt="" border="0"></td>
+                         
+          <td align="right"><input type="button" value="Next Frame >>" 
+            onMousedown="javascript:changeChars('forward');return true" class="form-button"></td>
+            
+          <td><img src="../../img/spacer.gif" width="60" height="5"" alt="" border="0"></td>
+          
+          
+          <td align="right"><input type="button" value="close" 
+            onClick="javascript:parent.close();return true" 
+            class="form-button" style="width:40px"></td>
+              
+        </tr>
+      </table></form></td><!-- /nav -->
+      
+      
+      
+      
+    </tr>
+  </table></td>
+</tr>
+</table>

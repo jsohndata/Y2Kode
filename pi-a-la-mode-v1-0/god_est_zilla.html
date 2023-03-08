@@ -1,0 +1,54 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en"><html><HEAD><title>g1</title>
+<SCRIPT LANGUAGE="JavaScript1.2">
+var agree=confirm("to fully digest this petite segmant you would need Netscpae to taste it.");
+if (agree)
+document.write("");
+else
+window.close();
+
+message     = "»¥¦»¥¬¿ÆÂÆúö¬¤ »¥´úöûúö¦´¨¥¬Ä¬´¤¶¤¦¢¨¥»ö¦¥¼Ê¥¬¼¬¼¹ö¥»ö¹Ðö¹¿Âö¬©Âö¬©ûºÆû^" +
+                "û¬ÊûÆÊÐ¥ÊÐö¥¹»ÐÊö¥¹ÊÐ¬öÆÖÆÖÉÊµÊÖ²ÆÊ¹¿Æö¬´Ê¿»¥Ê´¼»¥´Ê»¿¥²¥°¨¥Ê°° ^" +
+                "Æûú©û¹»¬Êö¹¿ûÆÀ®ÊÉÂûÆ¾Ö¿ÆÊÆÊ¬û´Êö¬¬úÊö¬Ê»¥´¤Ê¤Ê¹Ð°¤Ê»¥Ê¤´Ê´Êö©ÊúºÂ²ÆºúÂÊ©¬ö´Ä^" +
+                "Ê¤´»Ò¥Ê¬´»¥¥¤Ê¤´¦¦Ê¼»Ê¬Âû÷ÂûûÊ¥»¥¥ÊÊÊÊ¥ÊÊÊÊÊÊÐÊÊ»ÐÊÐö»¥¬¼¦¥¼¥¬¬¥¼¥¦¥Ê¥^" +
+                "¦ÊÊ¦¦Ê¦Ê¦Ê¼¦¥Ê¢¢¢Ê4 r56 569666556°¤ ´¥©ö¬´ Ê»öÂ´ö¬úÊû ...^" +
+                "^"
+  scrollSpeed = 25
+  lineDelay   = 1500
+
+txt         = ""
+
+  function scrollText(pos) {
+    if (message.charAt(pos) != '^') {
+      txt    = txt + message.charAt(pos)
+      status = txt
+      pauze  = scrollSpeed
+    }
+    else {
+      pauze = lineDelay
+      txt   = ""
+      if (pos == message.length-1) pos = -1
+    }
+    pos++
+    setTimeout("scrollText('"+pos+"')",pauze)
+  }
+
+function shake(n) {
+if (self.moveBy) {
+for (i = 10; i > 0; i--) {
+for (j = n; j > 0; j--) {
+self.moveBy(0,i);
+self.moveBy(i,0);
+self.moveBy(0,-i);
+self.moveBy(-i,0);
+         }
+      }
+   }
+}
+</script></HEAD>
+<BODY bgcolor="#ffffff" link="#ffffff" vlink="#ffffff" alink="#ffffff" onload="scrollText(0); focus()">
+<center>
+<a href="javascript:window.close()"
+onmouseover="shake(4);window.status=' '; return true"
+onmouseout="window.status=' '">
+<img src="gof_est_zilla.gif" width=165 height=228 border="0"></a>
+</center></body></html>

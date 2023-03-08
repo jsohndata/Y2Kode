@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.0 Transitional//en">
+<html>
+<head><title> ko30 - 1</title>
+<SCRIPT LANGUAGE="JavaScript">
+
+function setupStrobe() {
+text = "abstract describes,but does not confirm or tell the truth--it is the truth.  it suggests it does not tell. it lies it lies";
+
+var x=navigator.appVersion;
+y=x.substring(0,4);
+if(y>=4)strobeEffect();
+}
+var isNav=(navigator.appName.indexOf("Netscape")!=-1);
+var colors=new Array(
+"FFFFFF","FFFFFF","FFFFFF","FFFFFF","FFFFFF","FFFFFF",
+"FFFFFF","F9F9F9","F1F1F1","E9E9E9","E1E1E1","D9D9D9",
+"D1D1D1","C9C9C9","C1C1C1","B9B9B9","B1B1B1","A9A9A9",
+"A1A1A1","999999","919191","898989","818181","797979",
+"717171","696969","616161","595959","515151","494949",
+"414141","393939","313131","292929","212121","191919",
+"111111","090909","000000","000000","000000","000000",
+"000000","000000","000000","000000","000000","000000")
+
+a=0,b=1;
+function strobeEffect() {
+color=colors[a];
+aa="<font color="+color+">" + text + "</font>"
+if(isNav) {
+document.object1.document.write(aa);
+document.object1.document.close();
+
+}
+else object1.innerHTML=aa;
+a+=b;
+if (a==47) b-=2;
+if (a==0) b+=2;
+xx=setTimeout("strobeEffect()",1);
+
+}
+ 
+</SCRIPT>
+</head>
+
+<body bgcolor="#000000" onLoad="setupStrobe()">
+<div id="object1" style="position:absolute; visibility:show; left:1%; top:50%; z-index:2">
+
+</div>
+
+<table cellpadding="0" cellspacing"0" border="0" width="100%" height="100%">
+<tr>
+  <td><table cellpadding="0" cellspacing"0" border="0" align="right" valign="middle">
+    <tr>
+      <td><img src="../../spacer.gif" width="100" height="1" border="0" alt=""></td>
+      <td><img src="pkojak.gif" width="100" height="64" border="0" alt=""></td>
+    </tr>
+    
+    <tr>
+      <td colspan="2"><img src="../../spacer.gif" width="1" height="64" border="0" alt=""></td>
+    
+    <tr>
+      <td colspan="2"><a href="../dube3_steve/pim_1de9_neuf.html"><img src="pkozak.gif" width="100" height="65" border="0" alt=""></a></td>
+    </tr>
+  </table></td>
+</table>
+</body></html>

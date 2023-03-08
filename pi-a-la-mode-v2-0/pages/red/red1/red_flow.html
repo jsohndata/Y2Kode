@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//en">
+<html>
+<head>
+<title> heart   he art   hear art</title>
+</head>
+<body bgcolor="#cc3300">
+<script>
+/*
+Cross browser cursor trailer script
+By Brian Caputo (bcaputo@icdc.com)*/
+B=document.all;
+C=document.layers;
+T1=new Array("red1.gif",60,60,"red2.gif",60,60,"red3.gif",60,60,"red4.gif",60,60,"red5.gif",60,60)
+nos=parseInt(T1.length/3)
+rate=150
+ie5fix1=0;
+ie5fix2=0;
+for (i=0;i<nos;i++){
+createContainer("CUR"+i,i*10,i*10,i*3+1,i*3+2,"","<img src='"+T1[i*3]+"' width="+T1[(i*3+1)]+" height="+T1[(i*3+2)]+" border=0>")}
+function createContainer(N,Xp,Yp,W,H,At,HT,Op,St){
+with (document){
+write((!B) ? "<layer id='"+N+"' left="+Xp+" top="+Yp+" width="+W+" height="+H : "<div id='"+N+"'"+" style='position:absolute;left:"+Xp+"; top:"+Yp+"; width:"+W+"; height:"+H+"; ");
+if(St){
+if (C)
+write(" style='");
+write(St+";' ")
+}
+else write((B)?"'":"");
+write((At)? At+">" : ">");
+write((HT) ? HT : "");
+if (!Op)
+closeContainer(N)
+}
+}
+function closeContainer(){
+document.write((B)?"</div>":"</layer>")
+}
+function getXpos(N){
+return (B) ? parseInt(B[N].style.left) : C[N].left
+}
+function getYpos(N){
+return (B) ? parseInt(B[N].style.top) : C[N].top
+}
+
+function moveContainer(N,DX,DY){
+c=(B) ? B[N].style :C[N];c.left=DX;c.top=DY
+}
+function cycle(){
+//if (IE5) 
+if (document.all&&window.print){
+ie5fix1=document.body.scrollLeft;
+ie5fix2=document.body.scrollTop;
+}
+for (i=0;i<(nos-1);i++){
+moveContainer("CUR"+i,getXpos("CUR"+(i+1)),getYpos("CUR"+(i+1)))
+}
+}
+function newPos(e){
+moveContainer("CUR"+(nos-1),(B)?event.clientX+ie5fix1:e.pageX+2,(B)?event.clientY+ie5fix2:e.pageY+2
+)
+}
+if(document.layers)
+document.captureEvents(Event.MOUSEMOVE)
+document.onmousemove=newPos
+setInterval("cycle()",rate)
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+  <td><a href="#" 
+       onmouseover="document.bgColor='#ff3118'"
+       onmousedown="document.bgColor='#cc3300'"><img 
+       src="red1.gif" width="60" height="60" border="0" alt=""></td>
+</tr>
+
+<tr>
+  <td><a href="#"
+       onmouseover="document.bgColor='#844d18'" 
+       onmousedown="document.bgColor='#000000'"><img 
+       src="red2.gif" width="60" height="60" border="0" alt=""></td>
+</tr>
+
+<tr>
+  <td><a href="#" 
+       onmouseover="document.bgColor='#00a5c6'"
+       onmousedown="document.bgColor='#ffffff'"><img 
+       src="red3.gif" width="60" height="60" border="0" alt=""></td>
+</tr>
+
+<tr>
+  <td><a href="#"
+       onmouseover="document.bgColor='#639c18'" 
+       onmousedown="document.bgColor='#0000000'"
+       onmouseout="window.status=' '; return true"><img 
+       src="red4.gif" width="60" height="60" border="0" alt=""></td>
+</tr>
+
+<tr>
+  <td><a href="#" 
+       onmouseover="document.bgColor='#616161';"
+       onmousedown="document.bgColor='#ffff10'"><img 
+       src="red5.gif" width="60" height="60" border="0" alt=""></td>
+</tr>
+</table>
+</body></html>

@@ -1,0 +1,32 @@
+.body-style
+{background-color:#333333;}
+
+select
+{font-size:10px;
+ color:#ffffff;
+ background:#444444;
+ width:120px;
+ border-color:#FFCC66;}
+
+a:link
+{font-family:"arial","helvetica"; 
+ font-size:12px; 
+ color:#33CCFF;
+ text-decoration:none;}
+ 
+a:visited
+{font-family:"arial","helvetica"; 
+ font-size:12px;
+ color:#33CCFF;
+ text-decoration:none;}
+
+a:active
+{font-family:"arial","helvetica";
+ font-size:12px;
+ color:#0099FF;}
+
+a:hover
+{font-family:"arial","helvetica";
+ font-size:12px;
+ color:#ffffff;
+ text-decoration:underline}

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//en">
+<html>
+<head>
+<style>
+p{font-family:palatino,times; font-size:10px; color:#0084a5}
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+function changeimage(towhat,url){
+if (document.images){
+document.images.targetimage.src=towhat.src
+gotolink=url
+}
+}
+function warp(){
+window.location=gotolink
+}
+
+</script>
+<script language="JavaScript1.1">
+var myimages=new Array()
+var gotolink="#"
+
+function preloadimages(){
+for (i=0;i<preloadimages.arguments.length;i++){
+myimages[i]=new Image()
+myimages[i].src=preloadimages.arguments[i]
+}
+}
+
+
+preloadimages("red_xref_1.gif","red_xref_2.gif","red_xref_3.gif","red_xref_4.gif","red_xref_5.gif","red_xref_6.gif","red_xref_7.gif","red_xref_8.gif","red_xref_9")
+</script>
+</head>
+
+<body alink="#0084a5" vlink="#0084a5" link="#0084a5" bgcolor="#ffffff" background="../red2/red_x_bg.gif">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+<tr>
+  <td align="center" valign="middle"><table cellpadding="0" cellspacing="5" border="0">
+    <tr>
+      <td colspan="8" align="center"><a href="javascript:warp()"><img 
+        src="red_xref_1.gif" widht="170" height="203" name="targetimage" border="0" alt=""></a></td>
+    </tr>
+
+    <tr>
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[0],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[1],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[2],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[3],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[4],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[5],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[6],this.href)"><p>pikabu</p></a></td>
+
+      <td align="center"><a href="#" onMouseover="changeimage(myimages[7],this.href)"><p>pikabu</p></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+</body></html>

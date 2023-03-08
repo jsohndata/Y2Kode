@@ -1,0 +1,110 @@
+<html>        
+<head>    
+<title><::(-_-)::></title>
+<style>
+.form
+{font-family:"arial","helvetica";
+ font-size:12px;
+ color:#ffffff;
+ background-color:#996600;
+ border-color:#663300;
+ border-width:thin;
+ border-style:solid;}
+ 
+#button
+{width:20px;
+ height:16px;}
+</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Ricocheting (ricocheting@hotmail.com) -->
+<!-- Web Site:  http://www.ricocheting.com -->
+
+current = 0;
+function next() {
+if (document.slideform.slide[current+1]) {
+document.images.show.src = document.slideform.slide[current+1].value;
+document.slideform.slide.selectedIndex = ++current;
+   }
+else first();
+}
+function previous() {
+if (current-1 >= 0) {
+document.images.show.src = document.slideform.slide[current-1].value;
+document.slideform.slide.selectedIndex = --current;
+   }
+else last();
+}
+function first() {
+current = 0;
+document.images.show.src = document.slideform.slide[0].value;
+document.slideform.slide.selectedIndex = 0;
+}
+function last() {
+current = document.slideform.slide.length-1;
+document.images.show.src = document.slideform.slide[current].value;
+document.slideform.slide.selectedIndex = current;
+}
+
+
+function change() {
+current = document.slideform.slide.selectedIndex;
+document.images.show.src = document.slideform.slide[current].value;
+}
+
+
+
+</script>
+</head>
+
+<body topmargin="30" leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#270000">
+<form name=slideform>
+
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+  <td align="left" valign="top"><table cellpaddig="0" cellspacing="0" border="0">
+    <tr>
+      <td align="left" valign="top"><img src="snap_10.31.01_01folder/00.jpg" width="511" height="383" alt="" border="0" name="show"></td>
+    </tr>
+
+    <tr>
+      <td align="center"><table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><input type=button onClick="previous();" value="<<" title="Previous" class="form" id="button"></td>
+          
+          <td>&nbsp;&nbsp;</td>
+
+          <td align="center">
+          <select name="slide" onChange="change();" class="form">
+            <option value="snap_10.31.01_01folder/00.jpg">Home</option>
+            <option value="snap_10.31.01_01folder/01.jpg">01</option>
+            <option value="snap_10.31.01_01folder/02.jpg">02</option>
+            <option value="snap_10.31.01_01folder/03.jpg">03</option>
+            <option value="snap_10.31.01_01folder/04.jpg">04</option>
+            <option value="snap_10.31.01_01folder/05.jpg">05</option>
+            <option value="snap_10.31.01_01folder/06.jpg">06</option>
+            <option value="snap_10.31.01_01folder/07.jpg">07</option>
+            <option value="snap_10.31.01_01folder/08.jpg">08</option>
+            <option value="snap_10.31.01_01folder/09.jpg">09</option>
+            <option value="snap_10.31.01_01folder/10.jpg">10</option>
+            <option value="snap_10.31.01_01folder/11.jpg">11</option>
+            <option value="snap_10.31.01_01folder/12.jpg">12</option>
+            <option value="snap_10.31.01_01folder/13.jpg">13</option>
+            <option value="snap_10.31.01_01folder/14.jpg">14</option>
+            <option value="snap_10.31.01_01folder/15.jpg">15</option>
+            <option value="snap_10.31.01_01folder/16.jpg">16</option>
+          </select></td>
+          
+          <td>&nbsp;&nbsp;</td>
+      
+          <td><input type=button onClick="next();" value=">>" title="Next" class="form" id="button"></td>
+          
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      
+          <td><input type=button onClick="javascript:window.close()" value="close" title="close" class="form" style="height:16px"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </td></table>
+</tr>
+</body></html>

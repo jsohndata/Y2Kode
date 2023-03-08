@@ -1,0 +1,160 @@
+<html>
+<head>
+<title><::(-_-)::></title>
+<link rel="stylesheet" href="/building38.com-v3-5/00_garage/style.css">
+<script language="javascript" src="/building38.com-v3-5/00_garage/script.building.js"></script>
+
+<script language="javascript" src="/building38.com-v3-5/00_garage/script_exp.kevy.js"></script>
+<link rel="stylesheet" href="/building38.com-v3-5/00_garage/style_exp.00lab.css">
+</head>
+
+
+<body bgcolor="#990000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" class="body-style">
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><!-- parent -->
+<tr>
+<script>top_nav()</script>
+  <tr>
+    <td align="center"><div style="margin:2%"><table cellspacing="0" border="0" cellpadding="0" height="350"><!-- ** -->
+      <tr>
+        <td align="center" valign="middle">
+          <p class="header" id="white">Is your discovery
+          <br>worth yet the $4
+          <br>you part for the
+          <br>red light?</p></td>
+      </tr>
+    </table></div></td><!-- ** -->
+  </tr>
+
+  <tr>
+    <td valign="bottom"><div><table cellpadding="0" cellspacing="0" border="0" width="100%" class='table-nav'><!-- bottom nav -->
+        <tr>
+          <td><table cellpadding="0" cellspacing="0" border="0"><!-- bread crumb -->
+            <tr>
+              <td><div class="bottom-title" style="color:#CC6633"><nobr>experimental /<span style="color:#666666"> Kevy / </span><span style="color:#333333;font-size:25px"> 17 </nobr></span></div></td>
+              <td><img src="../../img/spacer.gif" width="27" height="1" alt="" border="0"></td>
+              <td valign="middle"><table cellpadding="0" cellspacing="0" border="0"><!-- previous selection -->
+                <tr>
+                  <td><img src="../../img/nav_arrow_previous.gif" name="link01" width="14" height="7" alt="" border="0"></td>
+                  <td><img src="../../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                  <td><nobr><a href="16.html" style="font-size:12px"
+                    onMouseover = "img_on('link01');return true" 
+                    onMouseout = "img_off('link01');" class="this">previous selection</a></nobr></td>
+                </tr>
+               </table></td><!-- /previous selection -->
+             
+               <td><img src="../../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+             
+               <td valign="middle"><table cellpadding="0" cellspacing="0" border="0"><!-- next selection -->
+                <tr>
+                  <td><nobr><a href="01.html" style="font-size:12px"
+                    onMouseover = "img_on('link02');return true" 
+                    onMouseout = "img_off('link02');" class="this">next selection</a></nobr></td>
+                  <td><img src="../../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                  <td><img src="../../img/nav_arrow_next.gif" name="link02" width="14" height="7" alt="" border="0"></td>
+                </tr>
+               </table></td><!-- /next selection -->
+             
+               <td><img src="../../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+             
+               <td valign="middle"><table cellpadding="0" cellspacing="0" border="0"><!-- random selection -->
+                <tr>
+                  <td><nobr><a href="javascript:rand_link()" style="font-size:12px"
+                    onMouseover = "img_on('link03');return true" 
+                    onMouseout = "img_off('link03');" class="this">random selection</a></nobr></td>
+                  <td><img src="../../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                  <td><img src="../../img/nav_arrow_random.gif" name="link03" width="14" height="7" alt="" border="0"></td>
+                </tr>
+               </table></td><!-- /random selection -->
+            </tr>
+          </table></td><!-- /bread crumb -->
+        </tr>
+<script>nav()</script> 
+<script>end_one()</script>
+<script>end_two()</script>
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+var no = 4; // snow number
+var speed = 1; // smaller number moves the snow faster
+var snowflake = "17_money.jpg";
+
+var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+var ie4up = (document.all) ? 1 : 0;
+var dx, xp, yp;    // coordinate and position variables
+var am, stx, sty;  // amplitude and step variables
+var i, doc_width = 340, doc_height = 300;
+if (ns4up) {
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+} else if (ie4up) {
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+dx = new Array();
+xp = new Array();
+yp = new Array();
+am = new Array();
+stx = new Array();
+sty = new Array();
+for (i = 0; i < no; ++ i) {  
+dx[i] = 0;                        // set coordinate variables
+xp[i] = Math.random()*(doc_width-50);  // set position variables
+yp[i] = Math.random()*doc_height;
+am[i] = Math.random()*20;         // set amplitude variables
+stx[i] = 0.02 + Math.random()/10; // set step variables
+sty[i] = 0.7 + Math.random();     // set step variables
+if (ns4up) {                      // set layers
+if (i == 0) {
+document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src=\"" + snowflake + "\" border=\"0\"></layer>");
+} else {
+document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src=\"" + snowflake + "\" border=\"0\"></layer>");
+   }
+} else if (ie4up) {
+if (i == 0) {
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src=\"" + snowflake + "\" border=\"0\"></div>");
+} else {
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src=\"" + snowflake + "\" border=\"0\"></div>");
+      }
+   }
+}
+function snowNS() {  // Netscape main animation function
+for (i = 0; i < no; ++ i) {  // iterate for every dot
+yp[i] += sty[i];
+if (yp[i] > doc_height-50) {
+xp[i] = Math.random()*(doc_width-am[i]-30);
+yp[i] = 0;
+stx[i] = 0.02 + Math.random()/10;
+sty[i] = 0.7 + Math.random();
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+dx[i] += stx[i];
+document.layers["dot"+i].top = yp[i];
+document.layers["dot"+i].left = xp[i] + am[i]*Math.sin(dx[i]);
+}
+setTimeout("snowNS()", speed);
+}
+function snowIE() {  // IE main animation function
+for (i = 0; i < no; ++ i) {  // iterate for every dot
+yp[i] += sty[i];
+if (yp[i] > doc_height-50) {
+xp[i] = Math.random()*(doc_width-am[i]-30);
+yp[i] = 0;
+stx[i] = 0.02 + Math.random()/10;
+sty[i] = 0.7 + Math.random();
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+dx[i] += stx[i];
+document.all["dot"+i].style.pixelTop = yp[i];
+document.all["dot"+i].style.pixelLeft = xp[i] + am[i]*Math.sin(dx[i]);
+}
+setTimeout("snowIE()", speed);
+}
+if (ns4up) {
+snowNS();
+} else if (ie4up) {
+snowIE();
+}
+// End -->
+</script></body></html>

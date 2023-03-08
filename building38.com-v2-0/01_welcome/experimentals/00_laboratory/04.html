@@ -1,0 +1,232 @@
+<HTML>
+<HEAD>
+<title><::(-_-)::></title>
+<link rel="stylesheet" href="/building38.com-v3-5/00_garage/style.css">
+<script language="javascript" src="/building38.com-v3-5/00_garage/script.building.js"></script>
+
+<script language="javascript" src="/building38.com-v3-5/00_garage/script_exp.00lab.js"></script>
+<link rel="stylesheet" href="/building38.com-v3-5/00_garage/style_exp.00lab.css">
+<style>
+.button
+{width: 50px;
+ height: 15px;
+ color: #FFCC00;
+ background-color:#555555;
+ }
+ 
+#ut
+{color:#cccccc;
+}
+
+body
+{background-color:#333333;
+}
+
+a.this:link
+{font-family:"arial","helvetica";
+ font-size:14px;
+ color:#ffffff;}
+
+a.this:visited
+{font-family:"arial","helvetica";
+ font-size:14px;
+ color:#ffffff;
+ text-decoration:none}
+ 
+a.this:active
+{font-family:"arial","helvetica";
+ font-size:14px;
+ color:#cc3300;
+ text-decoration:none}
+ 
+a.this:hover
+{font-family:"arial","helvetica";
+ font-size:14px;
+ color:#FF6633;
+ text-decoration:underline}
+</style>
+
+<script>
+var listimages = new Array("04_unreal/1.jpg","04_unreal/2.jpg","04_unreal/3.jpg","04_unreal/4.jpg","04_unreal/5.jpg","04_unreal/6.jpg","04_unreal/7.jpg","04_unreal/8.jpg","04_unreal/9.jpg","04_unreal/10.jpg","04_unreal/11.jpg","04_unreal/12.jpg","04_unreal/13.jpg","04_unreal/14.jpg");
+
+var thisPic = 0;  //the counter for the image array
+var lastPic = 13;  //the last cell in our array = (number of pictures - 1)
+
+nowPix=new Array(lastPic);
+for(var counter=0;counter<=lastPic;counter++){
+nowPix[counter] = new Image();
+nowPix[counter].src=listimages[counter];
+}
+
+function processPrevious() {
+        if (document.images) {
+                if (thisPic==0) //if at the very beginning of array
+                {
+                    thisPic=lastPic; //goto the last cell in the array
+                 }
+                 else 
+                 {
+                    thisPic--; //else simply decrement the counter                    
+                 }
+                  document.myPicture.src=nowPix[thisPic].src;
+        }
+}
+
+function processNext() {
+        if (document.images) {
+                if (thisPic==lastPic) //if at the very end of the array
+                {
+                    thisPic=0; //goto the first cell of the array
+                 }
+                 else 
+                 {
+                thisPic++; //else simply increment the counter
+                }
+                document.myPicture.src=nowPix[thisPic].src;
+        }
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#666666" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" class="body-style">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%"><!-- parent -->
+<tr>
+<script>top_nav()</script>
+  <tr><td><div style="margin:2%"><table cellpadding="0" cellspacing="0" border="0" height="350"><!-- ** -->
+      <tr>
+        <td colspan="3"><a href="http://www.unrealtournament.com/"><span class="content" 
+          style="font-size:30px; color:#FFFFCC">Unreal Tournemnet<sup><span style="font-size:10px">&#153</span></sup></a></span>
+        <br>
+        <div class="content" id="ut" style="font-size:12px">LAN Match at 90 TAft Avenue, 02906<br>Apartment 5 vs. Apartment 6<br>08.25.01 -  08.31.01</div><br></td>
+      </tr>
+
+      <tr>
+        <td valign="top"><table cellpadding="0" cellspacing="0" border="0"><!-- left page -->
+          <tr>
+            <td><IMG SRC="04_unreal/1.jpg" WIDTH="300" HEIGHT="225" alt="" BORDER="0" name="myPicture"></td>
+          </tr>
+
+          <tr>
+            <td align="right"><table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td><input type="BUTTON"  value="<<" name="left" onClick="processPrevious()" class="button"></td>
+                <td><input type="BUTTON"  value=">>" name="right" onClick="processNext()" class="button"></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td><!-- /left page -->
+  
+        <td valign="top"><img src="../../img/spacer.gif" width="12" height="80" alt="" border="0"></td>
+  
+        <FORM>
+        <td><table cellpadding="0" cellspacing="0" border="0"><!-- right page -->
+          <tr>
+            <td><table cellpadding="0" cellspacing="0" border="0"><!-- jon -->
+              <tr>
+                <td><img src="04_unreal/player_wutwut.jpg" width="150" height="191" alt="" border="0"></td>
+                <td valign="top"><table cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td colspan="3"><img src="../../img/spacer.gif" width="7" height="13" alt="" border="0"></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><div id="ut" class="content">player:</div></td>
+                    <td><img src="../../img/spacer.gif" width="7" height="1" alt="" border="0"></td>
+                    <td><div id="ut" class="content"><b>Jon Cave</b></div></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><div id="ut" class="content">alias:</div></td>
+                    <td><img src="../../img/spacer.gif" width="7" height="1" alt="" border="0"></td>
+                          <td><b><div id="ut" class="content">Wut Wut</b></div></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><div id="ut" class="content">server:</div></td>
+                    <td><img src="../../img/spacer.gif" width="7" height="1" alt="" border="0"></td>
+                    <td><b><div id="ut" class="content">Jon1</b></div></td>
+                  </tr>
+                </div></table></td>
+              </tr>
+            </table></td><!-- /jon -->
+            
+            <td><img src="../../img/spacer.gif" width="30" height="1" alt="" border="0"></td>
+          
+            <td><table cellpadding="0" cellspacing="0" border="0"><!-- jiho -->
+              <tr>
+                <td><img src="04_unreal/player_hell_oh.jpg" width="150" height="191" alt="" border="0"></td>
+                <td valign="top"><table cellpadding="0" cellspacing="0" border="0"><div id="ut" class="content">
+                  <tr>
+                    <td colspan="3"><img src="../../img/spacer.gif" width="7" height="13" alt="" border="0"></td>
+                  </tr>
+            
+                  <tr>
+                    <td align="right"><div id="ut" class="content">player:</div></td>
+                    <td><img src="../../img/spacer.gif" width="7" height="1" alt="" border="0"></td>
+                    <td><b><div id="ut" class="content">Jiho Sohn</b></div></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><div id="ut" class="content">alias:</div></td>
+                    <td><img src="../../img/spacer.gif" width="7" height="1" alt="" border="0"></td>
+                    <td><b><div id="ut" class="content">Hell_Oh</b></div></td>
+                  </tr>
+                  <tr>
+                    <td align="right"><div id="ut" class="content">server:</div></td>
+                    <td><img src="../../img/spacer.gif" width="7" height="1" alt="" border="0"></td>
+                    <td><div id="ut" class="content"><b>taft</b></div></td>
+                  </tr>
+                </div></table></td>
+              </tr>
+            </table></td><!-- /jiho -->
+          </tr>
+        </FORM></table></td><!-- /right page -->
+      </tr>
+      </table></div></td><!-- ** -->
+  </tr>
+ 
+   <tr>
+    <td valign="bottom"><div><table cellpadding="0" cellspacing="0" border="0" width="100%" class='table-nav'><!-- bottom nav -->
+        <tr>
+          <td><table cellpadding="0" cellspacing="0" border="0"><!-- bread crumb -->
+            <tr>
+              <td><div class="bottom-title" style="color:#CC6633"><nobr>experimental /<span style="color:#666666"> 00 laboratory / </span><span style="color:#333333;font-size:25px">4 (unreal)</nobr></span></div></td>
+              <td><img src="../../img/spacer.gif" width="27" height="1" alt="" border="0"></td>
+              <td valign="middle"><table cellpadding="0" cellspacing="0" border="0"><!-- previous selection -->
+                <tr>
+                  <td><img src="../../img/nav_arrow_previous.gif" name="link01" width="14" height="7" alt="" border="0"></td>
+                  <td><img src="../../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                  <td><nobr><a href="03.html" style="font-size:12px"
+                    onMouseover = "img_on('link01');return true" 
+                    onMouseout = "img_off('link01');">previous selection</a></nobr></td>
+                </tr>
+               </table></td><!-- /previous selection -->
+             
+               <td><img src="../../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+             
+               <td valign="middle"><table cellpadding="0" cellspacing="0" border="0"><!-- next selection -->
+                <tr>
+                  <td><nobr><a href="05.html" style="font-size:12px"
+                    onMouseover = "img_on('link02');return true" 
+                    onMouseout = "img_off('link02');">next selection</a></nobr></td>
+                  <td><img src="../../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                  <td><img src="../../img/nav_arrow_next.gif" name="link02" width="14" height="7" alt="" border="0"></td>
+                </tr>
+               </table></td><!-- /next selection -->
+             
+               <td><img src="../../img/spacer.gif" width="10" height="1" alt="" border="0"></td>
+             
+               <td valign="middle"><table cellpadding="0" cellspacing="0" border="0"><!-- random selection -->
+                <tr>
+                  <td><nobr><a href="javascript:rand_link()" style="font-size:12px"
+                    onMouseover = "img_on('link03');return true" 
+                    onMouseout = "img_off('link03');">random selection</a></nobr></td>
+                  <td><img src="../../img/spacer.gif" width="5" height="1" alt="" border="0"></td>
+                  <td><img src="../../img/nav_arrow_random.gif" name="link03" width="14" height="7" alt="" border="0"></td>
+                </tr>
+               </table></td><!-- /random selection -->
+            </tr>
+    </table></td><!-- /bread crumb -->
+  </tr>
+<script>nav()</script> 
+<script>end_one()</script>
+<script>end_two()</script>
+</body></html>

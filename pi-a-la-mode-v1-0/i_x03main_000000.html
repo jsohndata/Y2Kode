@@ -1,0 +1,74 @@
+<!doctype html public "-//w3c//dtd html 4.0//en">
+<html>
+<head>
+<title>i_x03main_000000</title>
+<SCRIPT LANGUAGE = "JavaScript">
+function openFullscreen(page) {
+var yes = 1;
+var no = 0;
+
+var menubar = no;      // The File, Edit, View Menus
+var scrollbars = yes;   // Horizontal and vertical scrollbars
+var locationbar = no;  // The location box with the site URL
+var directories = no;  // the "What's New", "What Cool" links
+var resizable = no;    // Can the window be resized?
+var statusbar = yes;    // Status bar (with "Document: Done")
+var toolbar = no;      // Back, Forward, Home, Stop toolbar
+
+
+windowprops = "width=565" + (screen) + ",height=365" + (screen) + ",top=0,left=0";
+
+windowprops += 
+(menubar ? ",menubars" : "") +
+(scrollbars ? ",scrollbars" : "") +
+(locationbar ? ",location" : "") +
+(directories ? ",directories" : "") +
+(resizable ? ",resizable" : "") +
+(statusbar ? ",status" : "") +
+(toolbar ? ",toolbar" : "");
+
+
+window.open(page, 'fullPopup', windowprops );
+
+}
+
+function newWindow(){
+haWindow =  window.open('i_yyy_what.html', 'haWind', 'status=yes,width=600,height=260')
+}
+function cerWindow(){
+ceraWindow =  window.open('i_yyy_credit.html', 'ceraWind', 'status=yes,width=530,height=480')
+}
+
+</SCRIPT>
+</head>
+
+<body bgcolor="#000000" link="#000000" alink="#000000" vlink="#000000" >
+
+<table border="0" cellpadding="5" cellspacing="0" height="35%">
+
+<tr>
+  <td width="22" height="10%" align="left">&nbsp;</td>
+  <td align="left"><a href= "javascript:openFullscreen('index_ran_go.html')" 
+    onMouseover = "window.status='  all aboard..........'; return true"
+    onMouseout = "window.status=' '"><img 
+      border="0" name="link1" width="166" height="25" SRC="i_z_enter.gif"></a></td>
+</tr>
+
+<tr>
+  <td width="22" height="10%" align="left">&nbsp;</td>
+  <td align="left"><a href= "javascript:newWindow()"
+    onMouseover = "window.status='what is this??'; return true" 
+    onMouseout = "window.status=' '"><img 
+      border="0" name="link2" width="166" height="25" SRC="i_z_about.gif"></a></td>
+	
+<tr>
+  <td width="22" height="10%" align="left">&nbsp;</td>
+  <td align="left"><a href= "javascript:cerWindow()"
+    onMouseover = "window.status='credits..'; return true"
+    onMouseout = "window.status=' '"><img 
+      border="0" name="link3" width="166" height="25" SRC="i_z_credit.gif"></a></td>
+</tr>
+
+
+</table>
+</center></body></html>

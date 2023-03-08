@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 transitional//en">
+<html>
+<head>
+<title>aya3</title>
+<SCRIPT LANGUAGE = "JavaScript">
+function img_act(imgName) 
+  {window.status = " ";}
+function img_off(imgName) 
+  {window.status = " ";}
+  
+</SCRIPT>
+<SCRIPT LANGUAGE = "JavaScript1.1">
+{ link1on = new Image(80, 122);
+ link1on.src = "ayar_t.gif";
+link2on = new Image(80, 122);
+link2on.src = "ayar_b.gif";
+        
+link1off = new Image(80, 122);
+link1off.src = "ayart.gif";
+link2off = new Image(80, 122);
+link2off.src = "ayarb.gif" }
+
+function img_act(imgName)
+ {imgOn = eval(imgName + "on.src");
+        document [imgName].src = imgOn; }
+
+function img_off(imgName)
+        { imgOff = eval(imgName + "off.src");
+        document [imgName].src = imgOff; }
+
+</script><style>a{text-decoration:none}</style></head>
+
+<body bgcolor="#000000" vlink="#000000" link="#000000" link="#000000" align="center">
+
+<table cellspacing="0" border="0" cellpadding="0" width="100%" height="100%">
+<tr>
+  <td align="center" valign="middle"><table cellspacing="0" border="0" cellpadding="0">
+    <tr>
+     <td><a href= "aya_red_scroll.html" 
+       onMouseover = "img_act('link1'); window.status=' '; 
+       return true" onMouseout = "img_off('link1'); window.status=' '"><img SRC="ayart.gif"
+       name="link1" width="80" height="122" border="0" alt=""></td>
+    </tr>
+	
+    <tr>
+     <td><img src="../spacer.gif" width="1" height="30" border="0" alt=""></td>
+    </tr>
+  
+    <tr>
+     <td><a href= "aya_color_frame2.html" 
+       onMouseover = "img_act('link2'); window.status=' '; 
+       return true" onMouseout = "img_off('link2'); window.status=' '"><img  SRC="ayarb.gif"
+       name="link2" width="80" height="122" border="0" alt=""></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+</body></html>

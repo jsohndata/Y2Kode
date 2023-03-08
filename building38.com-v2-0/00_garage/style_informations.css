@@ -1,0 +1,27 @@
+select
+{font-size:10px;
+ color:#ffffff;
+ background:#999999;
+ width:120px;
+ border-color:#cccff;}
+
+#this-button
+{font-family:"arial","helvetica";
+ font-size:11px;
+ font-weight:bold;
+ color:#333333;
+ background-color:#cccccc;
+ border-color:#999999;
+ width:70px;}
+ 
+.this-text
+{font-size:10px;
+ color:#333333;
+ width:350px;
+ background-color:#cccccc;
+ border-color:#999999;}
+
+#resume-main-titles
+{font-size:14px;
+ font-weight:bold;
+ color:#666666}

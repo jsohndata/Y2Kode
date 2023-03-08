@@ -1,0 +1,74 @@
+ <!doctype html public "-//w3c//dtd html 4.0 transitional//en"><html><head><title>a</title>
+<meta http-equiv="refresh" content="2; url=qq6_pixe_in.html">
+<style>
+<!--
+.intro{
+position:absolute;
+left:0;
+top:0;
+layer-background-color:olive;
+background-color:olive;
+border:0.1px solid olive
+}
+-->
+</style></head>
+
+<body bgcolor="#660000">
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div>
+<script language="JavaScript1.2">
+
+/*
+Left-Right Curtain Script- 
+© Dynamic Drive (www.dynamicdrive.com)
+For full source code, installation instructions,
+100's more free DHTML scripts, and Terms Of
+Use, visit dynamicdrive.com
+*/
+
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+if (document.layers){
+for (i=1;i<=2;i++){
+temp[i]=eval("document.i"+i+".clip")
+temp2[i]=eval("document.i"+i)
+temp[i].width=window.innerWidth/2
+temp[i].height=window.innerHeight
+temp2[i].left=(i-1)*temp[i].width
+}
+}
+else if (document.all){
+var clipright=document.body.clientWidth/2,clipleft=0
+for (i=1;i<=2;i++){
+temp[i]=eval("document.all.i"+i+".style")
+temp[i].width=document.body.clientWidth/2
+temp[i].height=document.body.offsetHeight
+temp[i].left=(i-1)*parseInt(temp[i].width)
+}
+}
+
+
+function openit(){
+window.scrollTo(0,0)
+if (document.layers){
+temp[1].right-=speed
+temp[2].left+=speed
+if (temp[2].left>window.innerWidth/2)
+clearInterval(stopit)
+}
+else if (document.all){
+clipright-=speed
+temp[1].clip="rect(0 "+clipright+" auto 0)"
+clipleft+=speed
+temp[2].clip="rect(0 auto auto "+clipleft+")"
+if (clipright<=0)
+clearInterval(stopit)
+}
+}
+
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+
+</script></body></html>

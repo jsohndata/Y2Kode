@@ -1,0 +1,24 @@
+<meta http-equiv="refresh" content="10; url=/site/building38/01_ceramics/admin2/">
+
+<script>
+function dele(id,name)
+{
+	c = confirm("Really Delete "+name+"?");
+	if (c)
+	{
+		location.href= "admin.cgi?action=delete&glaze="+id;
+	}
+}
+</script>
+
+
+<table border=0 cellspacing=0 cellpadding=2 bgcolor="#ffffff" width="100%" height="100%">
+
+<tmpl_loop name=table_glaze>
+	<tr>
+		<td><font face="arial,helvetica" size="2"><tmpl_var id escape=1>.&nbsp;<tmpl_var glaze_name escape=1></font></td>
+	</tr>
+</tmpl_loop>
+
+</table>
+<br>

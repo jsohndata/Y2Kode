@@ -1,0 +1,104 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<HEAD>
+<title>redy's magic table</title>
+<SCRIPT LANGUAGE="JavaScript">
+var pos = 100;
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++) {
+this[i] = initArray.arguments[i];
+   }
+}
+var col=new initArray("4b","5b","8b","8b");
+function stop() {
+document.bgColor = '#cc33000';
+clearTimeout(loopID);
+}
+function start() {
+col[1]="#000000"
+col[2]="#ff3118"
+col[3]="#844d18"
+col[4]="#00a5c6"
+col[5]="#ffffff"
+col[6]="#000000"
+col[7]="#639c18"
+col[8]="#616161"
+
+pos++;
+if (pos<0||pos>10) {
+pos = 0;
+}
+document.bgColor = col[pos];
+loopID = setTimeout("start()",1);
+}
+</SCRIPT>
+
+
+<BODY bgcolor="#cc3300">
+<table border="0" cellspacing="0" cellpadding="0" width="100%" height="90%">
+<tr>
+  <td align="center" valign="middle"><table border="0" cellspacing="0" cellpadding="0" width="300">
+   <tr> 
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red2.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red2.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+   </tr>
+
+   <tr> 
+     <td width=60><a href="javascript:stop()"><img src="red3.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red4.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red5.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red4.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red3.gif" width="60" height="60" border="0" alt=""></a></td>
+   </tr>
+
+   <tr>
+     <td width=60><a href="javascript:start()"><img src="red2.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red3.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red3.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red2.gif" width="60" height="60" border="0" alt=""></a></td>
+   </tr>
+
+   <tr> 
+     <td width=60><a href="javascript:stop()"><img src="red3.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red4.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red5.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red4.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:stop()"><img src="red3.gif" width="60" height="60" border="0" alt=""></a></td>
+   </tr>
+
+   <tr>
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red2.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red2.gif" width="60" height="60" border="0" alt=""></a></td>
+
+     <td width=60><a href="javascript:start()"><img src="red1.gif" width="60" height="60" border="0" alt=""></a></td>
+   </tr>
+ </table></td>
+</tr>
+</table>
+</body></html>

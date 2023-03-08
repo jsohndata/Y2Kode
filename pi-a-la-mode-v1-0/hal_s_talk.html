@@ -1,0 +1,58 @@
+<!doctype html public "-//w3c//dtd html 4.0//en"><html>
+<head><title>menu2</title>
+<SCRIPT LANGUAGE = "JavaScript">
+
+
+function img_act(imgName) 
+  {window.status = " ";}
+function img_off(imgName) 
+  {window.status = " ";}
+  
+
+</SCRIPT>
+<SCRIPT LANGUAGE = "JavaScript1.1">
+{ link1on = new Image(116,200);
+link1on.src = "hal_t_shit_talk.gif";
+link2on = new Image(150,195);
+link2on.src = "hal_t_haole_talk.gif";
+link3on = new Image(148, 200);
+link3on.src = "hal_t_asian_talk.gif";     
+
+link1off = new Image(116,200);
+link1off.src = "hal_t_shit.gif";
+link2off = new Image(150,195);
+link2off.src = "hal_t_haole.gif";
+link3off = new Image(148,200);
+link3off.src = "hal_t_asian.gif";}
+			
+
+function img_act(imgName)
+ {imgOn = eval(imgName + "on.src");
+        document [imgName].src = imgOn; }
+
+function img_off(imgName)
+        { imgOff = eval(imgName + "off.src");
+        document [imgName].src = imgOff; }
+</script></head>
+
+<body bgcolor="#ffffff" alink="#ffffff" vlink="#ffffff" link="#ffffff">
+
+<table><tr><th height=60></table>
+
+<a href= "hal_cf_1.html"  target="indet4"
+ onMouseover = "img_act('link1'); window.status='          hwal lo <<<----------';return true" 
+onMouseout = "img_off('link1'); window.status=' '">
+<img border="0" name="link1" width=116 height=200 SRC="hal_t_shit.gif"></a>
+
+<a href= "boomguy.html"  target="indet4"
+ onMouseover = "img_act('link2'); window.status='       boom boom guy <<<============'; return true" 
+onMouseout = "img_off('link2'); window.status=' '">
+<img border="0" name="link2" width=150 height=195 SRC="hal_t_haole.gif"></a>
+
+<a href= "text_ani1.html"  target="indet4"
+ onMouseover = "img_act('link3'); window.status='         play square <<<============'; return true" 
+onMouseout = "img_off('link3'); window.status=' '">
+<img border="0" name="link3" width=148 height=200  SRC="hal_t_asian.gif"></a>
+
+</table></body></html>
+                        

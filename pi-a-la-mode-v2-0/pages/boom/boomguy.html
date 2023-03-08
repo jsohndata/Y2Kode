@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>_--===[] ^_^ []===--_</title>
+<SCRIPT LANGUAGE = "JavaScript">
+
+function img_act(imgName) 
+  {window.status = " ";}
+function img_off(imgName) 
+  {window.status = " ";}
+  </SCRIPT>
+<SCRIPT LANGUAGE = "JavaScript1.1">
+  { link1on = new Image(160, 120);
+    link1on.src = "boomguz2.gif";
+   
+link1off = new Image(160, 120);
+    link1off.src = "boomguz.gif";}
+			
+function img_act(imgName)
+ {imgOn = eval(imgName + "on.src");
+        document [imgName].src = imgOn; }
+
+function img_off(imgName)
+        { imgOff = eval(imgName + "off.src");
+        document [imgName].src = imgOff; }
+</script>
+</head>
+
+<body bgcolor="#000000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="85%">
+  <tr>
+    <td align="center" valign="middle"><a href="boomguy1.html"
+         onMouseover = "img_act('link1');return true" 
+         onMouseout = "img_off('link1');"><img 
+         SRC="boomguz.gif" width="160" height="120" border="0" alt="" name="link1"></a></td>
+  </tr>
+</table>
+</body></html>
+                        

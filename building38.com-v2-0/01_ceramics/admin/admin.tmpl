@@ -1,0 +1,29 @@
+<script>
+function dele(id,name)
+{
+	c = confirm("Really Delete "+name+"?");
+	if (c)
+	{
+		location.href= "admin.cgi?action=delete&glaze="+id;
+	}
+}
+</script>
+
+<h1>Glazes</h1>
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><td><b>Edit</b></td><td><b>ID</b></td><td><b>Glaze Name</b></td><td><b>Comments</b></td><td><b>Hazard Comments</b></td><td><b>Delete</b></td></tr>
+
+<tmpl_loop name=table_glaze>
+	<tr>
+		<td><b><a href="admindet.cgi?glaze=<tmpl_var id escape=1>">Edit</a></b></td>
+		<td><tmpl_var id escape=1></td>
+		<td><tmpl_var glaze_name escape=1></td>
+		<td><tmpl_var description escape=1></td>
+		<td><tmpl_var comment escape=1></td>
+		<td><b><a href="javascript:dele(&quot;<tmpl_var id escape=1>&quot;,&quot;<tmpl_var glaze_name escape=1>&quot;)">Delete</a></b></td>
+	</tr>
+</tmpl_loop>
+
+</table>
+<br>
+<a href="admindet.cgi">Click here to add new glaze</a>

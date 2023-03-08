@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//en"><head>
+<title>linebgzzzz_line</title><style>a{text-decoration:none}</style></head>
+<body background="backlines.gif" bgcolor="#000000"
+link="#000000" alink="#000000" vlink="#000000">
+<SCRIPT LANGUAGE="JavaScript1.2">
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++) {
+this[i] = initArray.arguments[i];
+   }
+}
+var ctext = "< system failure > ";
+var speed = 500;
+var x = 0;
+var color = new initArray(
+"#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", "#000000", 
+"#212121", 
+"#404040",
+"#616161",
+"#808080",
+"#808080","#808080","#808080","#808080","#808080","#808080",
+"#808080",
+"#616161",
+"#404040",
+"#212121"
+);
+if(navigator.appName == "Netscape") {
+document.write('<layer id="c"><center>'+ctext+'</center></layer><br>');
+}
+if (navigator.appVersion.indexOf("MSIE") != -1){
+document.write('<div id="c"><center>'+ctext+'</center></div>');
+}
+function chcolor(){ 
+if(navigator.appName == "Netscape") {
+document.c.document.write('<center><font color="'+color[x]);
+document.c.document.write('">'+ctext+'</font></center>');
+document.c.document.close();
+}
+else if (navigator.appVersion.indexOf("MSIE") != -1){
+document.all.c.style.color = color[x];
+}
+(x < color.length-1) ? x++ : x = 0;
+}
+setInterval("chcolor()",500);
+</script>
+<img src="backline_grayblock.gif" align=left border="0" width=42 height=320>
+<br>
+<a href="backlines_pre.html"  target="indet4"
+onmouseover="window.status='        1ine <<<----------'; return true"
+onmouseout="window.status=' '">
+<img src="backlline_for.gif" width=75 height=75 border="0" align=left></a>
+
+
+<a href="aay224_0.html"  target="indet4"
+onmouseover="window.status='        shi la ishi intro ---------->>>'; return true"
+onmouseout="window.status=' '">
+<img src="backlline_for.gif" width=75 height=75 border="0" align="right"></a>
+
+<a href="ana1.html"  target="indet4"
+onmouseover="window.status='           ana ===========>>>>'; return true"
+onmouseout="window.status=' '">
+<img src="backlline_for.gif" width=75 height=75 border="0" align="right">
+</body></html>

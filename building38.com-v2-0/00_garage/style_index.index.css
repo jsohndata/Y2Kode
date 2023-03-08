@@ -1,0 +1,92 @@
+body
+{scrollbar-arrow-color: #000000;
+ scrollbar-highlight-color: #cccccc;
+ scrollbar-shadow-color: #999999;
+ scrollbar-base-color : #cccccc;
+ scrollbar-track-color: #E1E5EB;
+ scrollbar-face-color: #E1E5EB;
+ scrollbar-3dlight-color: #cccccc;
+ scrollbar-darkshadow-color: #777777;}
+
+.homepage-body 
+{background-color:#ADB9CA;}
+
+.homepage-table
+{background-color:#E1E5EB;}
+
+.poll-button
+{font-size:12px;
+ color:#ffffff;
+ background-color:#A2ADC0;
+ width:70px;}
+ 
+.poll-radio
+{color:#555555;
+ border-color:#ffffff;}
+ 
+select
+{font-size:10px;
+ color:#000000;
+ background-color:#CFCFDC;
+ width:120px;
+ border-color:#777777;}
+ 
+#yourl
+{font-size:10px;
+ color:#333333;
+ width:162px;
+ border-color:#777777;}
+
+.iframe-border
+{border-style:solid;
+ border-width:thin;
+ border-color:#777777;}
+
+#iframe-margin
+{margin:7}
+
+a.splash:link
+{font-family:"arial","helvetica"; 
+ font-size:12px; 
+ color:#333333;
+ text-decoration:none;}
+ 
+a.splash:visited
+{font-family:"arial","helvetica"; 
+ font-size:12px;
+ color:#333333;
+ text-decoration:none;}
+
+a.splash:active
+{font-family:"arial","helvetica";
+ font-size:12px;
+ color:#cccccc;}
+
+a.splash:hover
+{font-family:"arial","helvetica";
+ font-size:12px;
+ color:#666666;
+ background-color:#cccccc;}
+ 
+
+
+.homepage-iframe-header
+{font-family:"arial","helvetica";
+ font-size:10px;
+ color:#000000;
+ font-weight:bold;
+ letter-spacing:1px;}
+ 
+.homepage-iframe-content
+{font-family:"arial","helvetica";
+ font-size:11px;
+ color:#333333;}
+ 
+#update-font-size-killer
+{font-size:11px}
+
+
+
+
+
+

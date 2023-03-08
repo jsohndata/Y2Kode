@@ -1,0 +1,28 @@
+<!doctype html public "-//w3c//dtd html 4.0//en">
+<html>
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+var howMany = 3;  // max number of items listed below
+var page = new Array(howMany+1);
+
+page[0]="inddtframe.html";
+page[1]="inddtframe2.html";
+page[2]="inddtframe.html";
+page[3]="inddtframe2.html";
+
+function rndnumber(){
+var randscript = -1;
+while (randscript < 0 || randscript > howMany || isNaN(randscript)){
+randscript = parseInt(Math.random()*(howMany+1));
+}
+return randscript;
+}
+quo = rndnumber();
+quox = page[quo];
+window.location=(quox);
+
+</SCRIPT>
+</HEAD><body></body></html>

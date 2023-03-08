@@ -1,0 +1,131 @@
+<!doctype html public "-//w3c//dtd html 4.0//en">                       
+<HTML>
+<HEAD>
+<title>_</title>
+<SCRIPT LANGUAGE = "JavaScript1.1">
+hexa = new Array(50);
+for(var i = 0; i < 10; i++)
+hexa[i] = i;
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+function hex(i) 
+{
+if (i < 0)
+return "00";
+else if (i > 255)
+return "ff";
+else
+return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function setbgColor(r, g, b) 
+{
+document.bgColor = "#"+hex(r)+hex(g)+hex(b);
+}
+        
+// 1 -- white --> black
+// -1 -- black --> white
+var inc = 1;
+var cur_i = 20;
+var max_step = 20;
+var in_progress = false;
+        
+function msover()
+{
+inc =  -1;
+if( !in_progress )
+step();
+}
+
+function msout()
+{
+inc = 1;
+if( !in_progress )
+step();
+}
+        
+function step()
+{               
+//      alert(document.bgColor);
+setbgColor( Math.floor(255 * cur_i / max_step),
+Math.floor(255 * cur_i / max_step),
+Math.floor(255 * cur_i /max_step) );
+//    alert("2:" + document.bgColor);
+cur_i += inc;
+if( (inc > 0 && cur_i > max_step) || (inc < 0 && cur_i < 0) )
+{
+cur_i -= inc;
+inc = -inc;
+in_progress = false;
+}
+else
+{
+in_progress = true;
+setTimeout("step()", 3);
+}
+}
+// -->
+</script>
+
+<style type="text/css">
+#text= {position:absolute; z-index:3; left:250px; top:170}
+#enter= {position:absolute; z-index:10; left:40; top:100}
+a{text-decoration:none}
+</style>
+
+</head>
+
+
+<BODY bgcolor="#cc3300" link="#000000" alink="#ff0000" vlink="#000000"> 
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+  <td align="left" valign="middle"><table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><a href="#" onMouseOver="msout();" onMouseOut="msover();"><font 
+        size="+12"> ???</font></a></td>
+      <td><font color="#ffffff" size="8"><strong>2</strong></font></td>
+      <td><img src="../spacer.gif" width="200" height="1" border="0" alt=""></td>
+    </tr>
+    
+    <tr>
+      <td colspan="2"><a href="#" 
+       style="cursor:move"><font size="+6" 
+       color="#ffffff"><b>¹</b></font></a></td>
+       <td align="center">zer&#216;</td>
+    </tr>
+    
+    <tr>
+      <td colspan="3" align="right"><a href="text_ani1.html" style="cursor:help" 
+       onMouseOver="msout();" onMouseOut="msover();"><font color="#cc3300" 
+       size="+8"><strong>&#224;</strong></font></a></td>
+
+    <tr>
+      <td><table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td align="right" valign="bottom"><a href="#" onMouseOver="msover();" onMouseOut="msout();"><font 
+          size="+3">TM</td>
+        </tr>
+        
+        <tr>
+          <td align="right"><font size="2">Lets trade mark
+            <br> for a penny</font></a></td>
+        </tr>
+      </table></td>
+      
+      <td colspan="2" align="center"><a href="#" onmouseover="document.bgColor='#cc3300'"><font color="#ffffff">one
+      <br>&nbsp;&nbsp;&nbsp;&#188;
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#189;
+      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#190;&nbsp;</font></a></td>
+    </tr>
+
+    <tr>
+      <td colspan="3" align="right"><a nhref style="cursor:wait" 
+       onMouseOver="msover()" onMouseOut="msout()"><font 
+       color="#000000" size="+9">&#137;</font></a></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+</body></HTML>

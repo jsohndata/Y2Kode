@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//en"><html><head><style>a{text-decoration:none}</style>
+<script>
+
+function changeimage(towhat,url){
+if (document.images){
+document.images.targetimage.src=towhat.src
+gotolink=url
+}
+}
+function warp(){
+window.location=gotolink
+}
+
+</script>
+<script language="JavaScript1.1">
+var myimages=new Array()
+var gotolink="#"
+
+function preloadimages(){
+for (i="0";i<preloadimages.arguments.length;i++){
+myimages[i]=new Image()
+myimages[i].src=preloadimages.arguments[i]
+}
+}
+
+preloadimages("gal_11.gif","gal_21.gif","gal_31.gif","gal_41.gif","gal_51.gif","gal_61.gif","gal_71.gif","gal_81.gif")
+</script></head>
+
+<body bgcolor="#000000" alink="#000000" vlink="#000000" link="#000000" topmargin="5">
+<center>
+<a href="javascript:warp()" onmouseover="window.status='                  **** ** * * * * * *** * * * * * * *** * * * *' ;return true">
+<img src="gal_01.gif" name="targetimage" border="0" vspace="2" width="100" height="100"></a>
+
+<table cellpadding="0" cellspacing="0" border="0">
+
+<tr>
+<td width="10"  bgcolor="#404040"><font color="#404040">
+<a href="chiqed_frame.html" target="indet4"
+onMouseover="changeimage(myimages[0],this.href); window.status='        red door <<<----------' ;return true"
+onmouseout="window.status=' '; return true">_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#606060"><font color="#606060">
+<a href="#" onMouseover="changeimage(myimages[1],this.href); window.status='                  * * * * * * * * * * * * * * * * * * * ' ;return true"
+onmouseout="window.status='************************************************ '; return true">_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#404040"><font color="#404040">
+<a href="#" onMouseover="changeimage(myimages[2],this.href); window.status='                  ********** * ********* ******** *** * ** ' ;return true"
+onmouseout="window.status=' *** * * * * * * * * * *  * ************* * * * * * * * * * * * * *                    ********'; return true"
+>_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#606060"><font color="#606060">
+<a href="JavaScript:window.location.reload()" 
+onMouseover="changeimage(myimages[3],this.href); window.status='                        reload ' ;return true">_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#404040"><font color="#404040">
+<a href="keuhblang.html"  target="indet4"
+ onMouseover="changeimage(myimages[4],this.href); window.status='           keuhblang <<<============' ;return true"
+onmouseout="window.status='****** * * * *                                                                 ********************'; return true">_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#606060"><font color="#606060">
+<a href="#" onMouseover="changeimage(myimages[5],this.href); window.status='* * * *           ****          *** * * * *       * * * * ' ;return true"
+onmouseout="window.status=' '; return true">_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#404040"><font color="#404040">
+<a href="#" onMouseover="changeimage(myimages[6],this.href); window.status='******* * * * * * * * * *          * * * ****** * * * * * *     * * * ' ;return true"
+onmouseout="window.status=' ******                                         *************'; return true">_______</a></font></td>
+</tr>
+
+<tr>
+<td width="10" bgcolor="#606060"><font color="#606060">
+<a href="dna.html" target="indet4" onMouseover="changeimage(myimages[7],this.href); window.status='       dna  ---------->>>' ;return true"
+onmouseout="window.status=' * * * * * * * * * * ** * *  ** * * * * * * * * * ** * * ** * * * '; return true">_______</a></font></td>
+</tr>
+</table>
+
+<img src="gal_space_motion.gif" width="100" height="100" border="0">
+</center></body></html>

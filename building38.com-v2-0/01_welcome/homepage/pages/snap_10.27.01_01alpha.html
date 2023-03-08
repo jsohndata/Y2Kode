@@ -1,0 +1,163 @@
+<html>        
+<head>    
+<title><::(-_-)::></title>
+<style>
+.form
+{font-family:"arial","helvetica";
+ font-size:12px;
+ color:#ffffff;
+ background-color:#cc3300;
+ border-color:#663300;
+ border-width:thin;
+ border-style:solid;}
+ 
+#button
+{width:20px;
+ height:16px;}
+</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Ricocheting (ricocheting@hotmail.com) -->
+<!-- Web Site:  http://www.ricocheting.com -->
+
+current = 0;
+function next() {
+if (document.slideform.slide[current+1]) {
+document.images.show.src = document.slideform.slide[current+1].value;
+document.slideform.slide.selectedIndex = ++current;
+   }
+else first();
+}
+function previous() {
+if (current-1 >= 0) {
+document.images.show.src = document.slideform.slide[current-1].value;
+document.slideform.slide.selectedIndex = --current;
+   }
+else last();
+}
+function first() {
+current = 0;
+document.images.show.src = document.slideform.slide[0].value;
+document.slideform.slide.selectedIndex = 0;
+}
+function last() {
+current = document.slideform.slide.length-1;
+document.images.show.src = document.slideform.slide[current].value;
+document.slideform.slide.selectedIndex = current;
+}
+
+
+function change() {
+current = document.slideform.slide.selectedIndex;
+document.images.show.src = document.slideform.slide[current].value;
+}
+
+
+
+</script>
+</head>
+
+<body topmargin="30" leftmargin="0" marginwidth="0" marginheight="0" bgcolor="#000000">
+<form name=slideform>
+
+<table cellpadding="0" cellspacing="0" border="0" align="center">
+<tr>
+  <td align="left" valign="top"><table cellpaddig="0" cellspacing="0" border="0">
+    <tr>
+      <td align="left" valign="top"><img src="snap_10.27.01_01folder/P1010000.jpg" width="511" height="383" alt="" border="0" name="show"></td>
+    </tr>
+
+    <tr>
+      <td align="center"><table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><input type=button onClick="previous();" value="<<" title="Previous" class="form" id="button"></td>
+          
+          <td>&nbsp;&nbsp;</td>
+
+          <td align="center">
+          <select name="slide" onChange="change();" class="form">
+            <option value="snap_10.27.01_01folder/P1010000.jpg">Home</option>
+            <option value="snap_10.27.01_01folder/P1010023.jpg">01</option>
+            <option value="snap_10.27.01_01folder/P1010025.jpg">02</option>
+            <option value="snap_10.27.01_01folder/P1010031.jpg">03</option>
+            <option value="snap_10.27.01_01folder/P1010035.jpg">04</option>
+            <option value="snap_10.27.01_01folder/P1010046.jpg">05</option>
+            <option value="snap_10.27.01_01folder/P1010052.jpg">06</option>
+            <option value="snap_10.27.01_01folder/P1010056.jpg">07</option>
+            <option value="snap_10.27.01_01folder/P1010073.jpg">08</option>
+            <option value="snap_10.27.01_01folder/P1010080.jpg">09</option>
+            <option value="snap_10.27.01_01folder/P1010081.jpg">10</option>
+            <option value="snap_10.27.01_01folder/P1010084.jpg">11</option>
+            <option value="snap_10.27.01_01folder/P1010085.jpg">12</option>
+            <option value="snap_10.27.01_01folder/P1010087.jpg">13</option>
+            <option value="snap_10.27.01_01folder/P1010089.jpg">14</option>
+            <option value="snap_10.27.01_01folder/P1010091.jpg">15</option>
+            <option value="snap_10.27.01_01folder/P1010093.jpg">16</option>
+            <option value="snap_10.27.01_01folder/P1010094.jpg">17</option>
+            <option value="snap_10.27.01_01folder/P1010098.jpg">18</option>
+            <option value="snap_10.27.01_01folder/P1010105.jpg">19</option>
+            <option value="snap_10.27.01_01folder/P1010123.jpg">20</option>
+            <option value="snap_10.27.01_01folder/P1010130.jpg">21</option>
+            <option value="snap_10.27.01_01folder/P1010132.jpg">22</option>
+            <option value="snap_10.27.01_01folder/P1010134.jpg">23</option>
+            <option value="snap_10.27.01_01folder/P1010139.jpg">24</option>
+            <option value="snap_10.27.01_01folder/P1010140.jpg">25</option>
+            <option value="snap_10.27.01_01folder/P1010148.jpg">26</option>
+            <option value="snap_10.27.01_01folder/P1010152.jpg">27</option>
+            <option value="snap_10.27.01_01folder/P1010156.jpg">28</option>
+            <option value="snap_10.27.01_01folder/P1010161.jpg">29</option>
+            <option value="snap_10.27.01_01folder/P1010165.jpg">30</option>
+            <option value="snap_10.27.01_01folder/P1010172.jpg">31</option>
+            <option value="snap_10.27.01_01folder/P1010182.jpg">32</option>
+            <option value="snap_10.27.01_01folder/P1010184.jpg">33</option>
+            <option value="snap_10.27.01_01folder/P1010186.jpg">34</option>
+            <option value="snap_10.27.01_01folder/P1010188.jpg">35</option>
+            <option value="snap_10.27.01_01folder/P1010189.jpg">36</option>
+            <option value="snap_10.27.01_01folder/P1010191.jpg">37</option>
+            <option value="snap_10.27.01_01folder/P1010193.jpg">38</option>
+            <option value="snap_10.27.01_01folder/P1010196.jpg">39</option>
+            <option value="snap_10.27.01_01folder/P1010197.jpg">40</option>
+            <option value="snap_10.27.01_01folder/P1010198.jpg">41</option>
+            <option value="snap_10.27.01_01folder/P1010202.jpg">42</option>
+            <option value="snap_10.27.01_01folder/P1010209.jpg">43</option>
+            <option value="snap_10.27.01_01folder/P1010211.jpg">44</option>
+            <option value="snap_10.27.01_01folder/P1010213.jpg">45</option>
+            <option value="snap_10.27.01_01folder/P1010216.jpg">46</option>
+            <option value="snap_10.27.01_01folder/P1010218.jpg">47</option>
+            <option value="snap_10.27.01_01folder/P1010231.jpg">48</option>
+            <option value="snap_10.27.01_01folder/P1010233.jpg">49</option>
+            <option value="snap_10.27.01_01folder/P1010236.jpg">50</option>
+            <option value="snap_10.27.01_01folder/P1010239.jpg">51</option>
+            <option value="snap_10.27.01_01folder/P1010245.jpg">52</option>
+            <option value="snap_10.27.01_01folder/P1010246.jpg">53</option>
+            <option value="snap_10.27.01_01folder/P1010256.jpg">54</option>
+            <option value="snap_10.27.01_01folder/P1010257.jpg">55</option>
+            <option value="snap_10.27.01_01folder/P1010258.jpg">56</option>
+            <option value="snap_10.27.01_01folder/P1010260.jpg">57</option>
+            <option value="snap_10.27.01_01folder/P1010263.jpg">58</option>
+            <option value="snap_10.27.01_01folder/P1010268.jpg">59</option>
+            <option value="snap_10.27.01_01folder/P1010278.jpg">60</option>
+            <option value="snap_10.27.01_01folder/P1010287.jpg">61</option>
+            <option value="snap_10.27.01_01folder/P1010290.jpg">62</option>
+            <option value="snap_10.27.01_01folder/P1010291.jpg">63</option>
+            <option value="snap_10.27.01_01folder/P1010296.jpg">64</option>
+            <option value="snap_10.27.01_01folder/P1010303.jpg">65</option>
+            <option value="snap_10.27.01_01folder/P1010304.jpg">66</option>
+            <option value="snap_10.27.01_01folder/P1010306.jpg">67</option>
+            <option value="snap_10.27.01_01folder/P1010310.jpg">68</option>
+            <option value="snap_10.27.01_01folder/P1010313.jpg">69</option>
+          </select></td>
+          
+          <td>&nbsp;&nbsp;</td>
+      
+          <td><input type=button onClick="next();" value=">>" title="Next" class="form" id="button"></td>
+          
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      
+          <td><input type=button onClick="javascript:window.close()" value="close" title="close" class="form" style="height:16px"></td>
+        </tr>
+      </table></td>
+    </tr>
+  </td></table>
+</tr>
+</body></html>

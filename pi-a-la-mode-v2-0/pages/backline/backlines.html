@@ -1,0 +1,52 @@
+<head>
+<title>_--===[] ^_^ []===--_</title>
+<style>a{text-decoration:none}</style>
+</head>
+
+<body  bgcolor="#000000" link="#000000" alink="#000000" vlink="#000000" background="backlines.gif">
+<SCRIPT LANGUAGE="JavaScript1.2">
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++) {
+this[i] = initArray.arguments[i];
+   }
+}
+var ctext = "<    ^_^    >";
+var speed = 500;
+var x = 0;
+var color = new initArray(
+"#000000","#000000","#000000","#000000","#000000",
+"#000000","#000000","#000000","#000000","#000000",
+"#000000","#000000", "#212121", "#404040","#616161",
+"#808080","#808080","#808080","#808080","#808080",
+"#808080","#808080","#808080","#616161","#404040",
+"#ff0000"
+);
+if(navigator.appName == "Netscape") {
+document.write('<layer id="c"><center>'+ctext+'</center></layer><br>');
+}
+if (navigator.appVersion.indexOf("MSIE") != -1){
+document.write('<div id="c"><center>'+ctext+'</center></div>');
+}
+function chcolor(){ 
+if(navigator.appName == "Netscape") {
+document.c.document.write('<center><font color="'+color[x]);
+document.c.document.write('">'+ctext+'</font></center>');
+document.c.document.close();
+}
+else if (navigator.appVersion.indexOf("MSIE") != -1){
+document.all.c.style.color = color[x];
+}
+(x < color.length-1) ? x++ : x = 0;
+}
+setInterval("chcolor()",500);
+</script>
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr>
+  <td><img src="backlline_for.gif" width="75" height="75" border="0" align="left" alt=""></td>
+  <td valign="top"><img src="backlline_for.gif" width="75" height="75" border="0" align="right" alt="">
+                   <img src="backlline_for.gif" width="75" height="75" border="0" align="right"></td>
+</tr>
+</table>
+</body></html>
